@@ -1,0 +1,10 @@
+package fr.ensma.a3.ia.jeupersonnages.map;
+
+import java.util.Objects ;
+
+public class base {
+	
+	public String nomBase ;
+	
+
+}

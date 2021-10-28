@@ -1,0 +1,4 @@
+#Mon Oct 25 08:19:25 CEST 2021
+fr.ensma.a3.ia\:Jeu-Personnage\:jar\:tests\:1.0-SNAPSHOT=/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/bin/target/test-classes
+fr.ensma.a3.ia\:Jeu-Personnage\:pom\:\:1.0-SNAPSHOT=/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/bin/pom.xml
+fr.ensma.a3.ia\:Jeu-Personnage\:jar\:\:1.0-SNAPSHOT=/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/bin/target/classes

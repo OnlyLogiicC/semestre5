@@ -1,0 +1,78 @@
+package fr.ensma.a3.ia.jeupersonnages.map;
+
+import java.util.Objects ;
+import java.util.ArrayList;
+import java.util.List;
+
+import fr.ensma.a3.ia.jeupersonnages.elements.objets.IObjet;
+import fr.ensma.a3.ia.jeupersonnages.elements.objets.IRessource;
+import fr.ensma.a3.ia.jeupersonnages.elements.personnages.IPersonnage;
+
+public class Base {
+	
+	private String nomBase ;
+	private ECouleurBase couleurBase ;
+	/* collection elementJeu*/
+	private List<IPersonnage> collPers ;
+	private List<IRessource> collRess ;
+	private List<IObjet> collObj ;
+	
+	public Base(final String nom, final ECouleurBase coul) {
+		this.nomBase = Objects.requireNonNull(nom, "Il faut donner un nom a la base !") ;
+		this.couleurBase = Objects.requireNonNull(coul, "Il faut donner une couleur a la base !") ;
+		this.collPers = new ArrayList<>() ;
+		this.collRess = new ArrayList<>() ;
+		this.collObj = new ArrayList<>() ;
+		
+	}
+	
+	public final String getnomBase( ) {
+		return this.nomBase ;
+	}
+	
+	public final ECouleurBase getcouleurBase() {
+		return this.couleurBase ;
+	}
+	
+	public final List<IPersonnage> getCollPers() {
+		return collPers;
+	}
+	
+	public List<IRessource> getCollRess() {
+		return collRess;
+	}
+
+	public List<IObjet> getCollObj() {
+		return collObj;
+	}
+		
+	public final void setnomBase(final String nom) {
+		this.nomBase = Objects.requireNonNull(nom, "Il faut donner un nom a la base !") ;
+	}
+	
+	public final void setcouleurBase(final ECouleurBase coul) {
+		this.couleurBase = Objects.requireNonNull(coul, "Il faut donner une couleur a la base !") ;
+	}
+	
+	public final void add(IPersonnage pers) {
+		this.collPers.add(pers) ;
+	}
+	
+	public final void add(IRessource ress) {
+		this.collRess.add(ress) ;
+	}
+	
+	public final void add(IObjet obj) {
+		this.collObj.add(obj) ;
+	}
+	
+	public final void Rappel() {
+	}
+
+	@Override
+	public String toString() {
+		return "NomBase : " + this.nomBase + "\nCouleurBase : " + this.couleurBase.toString() + "\n" ;
+	}
+
+	
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WvPzgCp1Eey6Xf6pb1-6mw" name="NewModel">
+  <packageImport xmi:id="_poXRwCp5Eey6Xf6pb1-6mw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_gOi4ICp4Eey6Xf6pb1-6mw" name="carnet-contacts"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vd1FwCp4Eey6Xf6pb1-6mw" name="contacts"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xNcCMCp4Eey6Xf6pb1-6mw" name="adresses">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZAncYCp5Eey6Xf6pb1-6mw" name="adresse européenne" visibility="public">
+      <ownedAttribute xmi:id="_qsXscCp5Eey6Xf6pb1-6mw" name="numero rue" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qsXscSp5Eey6Xf6pb1-6mw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qsXscip5Eey6Xf6pb1-6mw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_hTmw0Cp6Eey6Xf6pb1-6mw" name="nom de rue" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hTmw0Sp6Eey6Xf6pb1-6mw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hTmw0ip6Eey6Xf6pb1-6mw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pQKXsCp6Eey6Xf6pb1-6mw" name="code postal" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pQKXsSp6Eey6Xf6pb1-6mw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pQKXsip6Eey6Xf6pb1-6mw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1QEfQCp6Eey6Xf6pb1-6mw" name="nom ville" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1QEfQSp6Eey6Xf6pb1-6mw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1QEfQip6Eey6Xf6pb1-6mw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EeZqoCp7Eey6Xf6pb1-6mw" name="adresse US" visibility="public"/>
+  </packagedElement>
+</uml:Model>

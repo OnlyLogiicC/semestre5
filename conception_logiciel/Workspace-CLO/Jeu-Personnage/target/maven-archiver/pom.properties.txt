@@ -1,0 +1,4 @@
+#Created by Apache Maven 3.3.9
+groupId=fr.ensma.a3.ia
+artifactId=Jeu-Personnage
+version=1.0-SNAPSHOT
