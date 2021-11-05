@@ -4,9 +4,9 @@
 #include <pthread.h>
 #include <signal.h>
 #include <errno.h>
-#include "tab_noir_cond.h"
+#include "tab_noir_cond_g.h"
 
-t_blackboard initbboard(int valeur){
+t_blackboard initbboard(void * valeur){
     t_blackboard board;
     board =(t_blackboard) malloc(sizeof(struct blackboard));
     board->val = valeur ;
@@ -16,7 +16,7 @@ t_blackboard initbboard(int valeur){
     return board;
 }
 
-void ecriture(t_blackboard board, int message){
+void ecriture(t_blackboard board, void * message){
     pthread_mutex_lock(&(board->m));
     board->val = message;
     board->fresh = 1;
@@ -24,7 +24,7 @@ void ecriture(t_blackboard board, int message){
     pthread_mutex_unlock(&(board->m));
 }
 
-int lecture(t_blackboard board){
+void * lecture(t_blackboard board){
     pthread_mutex_lock(&(board->m));
     while(board->fresh == 0){
         pthread_cond_wait(&(board->c),&(board->m));
