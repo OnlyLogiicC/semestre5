@@ -27,16 +27,28 @@ graphe grapheVide(){
     return g ;
 }
 
-void ajouterSommer(char valeur, graphe *g){
+void ajouterSommet(char valeur, graphe *g){
     sommet som ;
-    l_sommet s = (l_sommet)malloc(sizeof(struct nso)) ;
+    l_sommet ite ;
+    l_sommet psom = (l_sommet)malloc(sizeof(struct nso)) ;
     som.valeur = valeur ;
     som.arcs = NULL ;
-    s->s = som ;
-    s->suivant = NULL ;
+    psom->s = som ;
+    psom->suivant = NULL ;
     if (*g)==NULL {
-        *g
+        *g = psom ;
+    } else {
+        ite = (*g)->suivant ;
+        while (ite != NULL) {
+            ite = ite->suivant ;
+        }
+        ite->suivant = psom ;
     }
+}
+
+void ajouterArc(char valeur, char s1, char s2, graphe *g) {
+    
+}
 
     
 }

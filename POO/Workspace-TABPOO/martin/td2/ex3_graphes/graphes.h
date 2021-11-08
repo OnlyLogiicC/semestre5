@@ -10,7 +10,7 @@ typedef struct nar *l_arc ;
 typedef l_sommet graphe;
 
 graphe grapheVide();
-void ajouterSommer(char valeur, graphe *g);
+void ajouterSommet(char valeur, graphe *g);
 void ajouterArc(char valeur, char s1, char s2, graphe *g);
 void afficher(graphe g);
 
