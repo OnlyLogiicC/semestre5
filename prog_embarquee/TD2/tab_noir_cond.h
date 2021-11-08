@@ -1,5 +1,5 @@
-#ifndef TABLEAU_NOIR_H_
-#define TABLEAU_NOIR_H_
+#ifndef TABLEAU_NOIR_COND_H_
+#define TABLEAU_NOIR_COND_H_
 
 #include <pthread.h>
  
@@ -7,6 +7,7 @@
 typedef struct blackboard {
     int val ;
     pthread_mutex_t m ;
+    pthread_cond_t c;
     int fresh ;
 } *t_blackboard  ;
 
@@ -17,9 +18,6 @@ void killbboard(t_blackboard bboard) ;
 void ecriture(t_blackboard board, int message);
 
 int lecture(t_blackboard board);
-
-int lecture2(t_blackboard board, int * message);
-
 
 
 
