@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/.metadata/.plugins/org.eclipse.jdt.core
+2356405131.index
+1559713136.index
+537800280.index
+1865797976.index
+1929398499.index

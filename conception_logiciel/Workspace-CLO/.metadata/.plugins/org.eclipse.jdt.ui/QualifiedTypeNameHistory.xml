@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.ElementJeu"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.comportements.IAttaquable"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.objets.IRessource"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.objets.ElementJeuInerte"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.IRessource"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.objets.IObjet"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.personnages.IPersonnage"/>
+</qualifiedTypeNameHistroy>

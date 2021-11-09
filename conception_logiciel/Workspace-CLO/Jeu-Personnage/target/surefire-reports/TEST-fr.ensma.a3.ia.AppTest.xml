@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.ensma.a3.ia.AppTest" time="0.016" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/target/test-classes:/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/target/classes:/home/perezm/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/perezm/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-11"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/target/surefire/surefirebooter10303542223644537125.jar /home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/target/surefire 2021-10-22T15-55-56_378-jvmRun1 surefire6884399324089714590tmp surefire_010222452234411924250tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/target/test-classes:/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/target/classes:/home/perezm/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/perezm/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/perezm"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage/target/surefire/surefirebooter10303542223644537125.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.6+10-post-Debian-1bpo91"/>
+    <property name="user.name" value="perezm"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.9.0-16-amd64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/perezm/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-11"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.6"/>
+    <property name="user.dir" value="/home/perezm/Windows/S5/Conception_logiciel/Workspace-CLO/Jeu-Personnage"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vm.version" value="11.0.6+10-post-Debian-1bpo91"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="fr.ensma.a3.ia.AppTest" time="0.001"/>
+</testsuite>
