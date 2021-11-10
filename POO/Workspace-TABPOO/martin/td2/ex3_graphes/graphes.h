@@ -5,7 +5,7 @@
 typedef struct so sommet ;
 typedef struct ar arc ;
 typedef struct nso * l_sommet ;
-typedef struct nar *l_arc ;
+typedef struct nar * l_arc ;
 
 typedef l_sommet graphe;
 
