@@ -27,20 +27,20 @@ public class App extends Application {
     public void start(Stage primaryStage) {
     	primaryStage.setTitle("Covertisseur Euro<->Dollars") ;
     	root = new FlowPane(Orientation.HORIZONTAL) ;
-    	root.setAlignment(Pos.TOP_CENTER) ;
-    	root.setHgap(15);
-    	root.setVgap(15);
     	txtf_left = new TextField() ;
     	box_button = new VBox(20) ;
-    	box_button.setAlignment(Pos.TOP_CENTER);
     	cbox = new ComboBox<>() ;
     	cbox.getItems().addAll("Dollars->Euros","Euros->Dollars") ;
     	cbox.getSelectionModel().select(0) ;
     	box_button.getChildren().add(cbox) ;
        	btn = new Button("Convertir") ;
        	box_button.getChildren().add(btn) ;
+       	box_button.setAlignment(Pos.TOP_CENTER);
        	txtf_right = new TextField() ;
        	root.getChildren().addAll(txtf_left, box_button, txtf_right) ;
+       	root.setAlignment(Pos.TOP_CENTER) ;
+       	root.setHgap(15);
+       	root.setVgap(15);
        	scene = new Scene(root, 200, 100) ;
        	primaryStage.setMinHeight(130) ;
        	primaryStage.setMinWidth(700);
