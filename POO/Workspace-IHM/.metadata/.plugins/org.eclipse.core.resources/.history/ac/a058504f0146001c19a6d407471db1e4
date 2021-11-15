@@ -26,8 +26,10 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) {
     	primaryStage.setTitle("Covertisseur Euro<->Dollars") ;
-    	root = new FlowPane(Orientation.HORIZONTAL,10,10) ;
+    	root = new FlowPane(Orientation.HORIZONTAL) ;
     	root.setAlignment(Pos.TOP_CENTER) ;
+    	root.setHgap(15);
+    	root.setVgap(15);
     	txtf_left = new TextField() ;
     	box_button = new VBox(20) ;
     	box_button.setAlignment(Pos.TOP_CENTER);
