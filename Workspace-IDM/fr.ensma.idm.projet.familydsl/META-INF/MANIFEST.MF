@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: fr.ensma.idm.projet.familydsl;singleton:=true
+Automatic-Module-Name: fr.ensma.idm.projet.familydsl
+Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: fr.ensma.idm.projet.familydsl.model.arbregen,
+ fr.ensma.idm.projet.familydsl.model.arbregen.impl,
+ fr.ensma.idm.projet.familydsl.model.arbregen.util
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy

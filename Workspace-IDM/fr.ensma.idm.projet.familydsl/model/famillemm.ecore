@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="arbregen" nsURI="http://www.example.org/arbregen" nsPrefix="arbregen">
+  <eClassifiers xsi:type="ecore:EClass" name="Personne" abstract="true">
+    <eOperations name="afficher" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="age" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sesParents" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="habitation" lowerBound="1"
+        eType="#//Adresse" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mere" eType="#//Femme"
+        eOpposite="#//Femme/enfants"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pere" eType="#//Homme"
+        eOpposite="#//Homme/enfants"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Femme" eSuperTypes="#//Personne">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enfants" upperBound="-1"
+        eType="#//Personne" eOpposite="#//Personne/mere"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Homme" eSuperTypes="#//Personne">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enfants" upperBound="-1"
+        eType="#//Personne" eOpposite="#//Personne/pere"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Famille">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="membres" upperBound="-1"
+        eType="#//Personne" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Adresse">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numero" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ville" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>
