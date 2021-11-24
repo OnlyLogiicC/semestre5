@@ -1,0 +1,41 @@
+!SESSION 2021-11-24 15:08:57.519 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.6
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -version 3 -port 33171 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames fr.ensma.idm.projet.familydsl.model.test.FamilleTest -application org.eclipse.pde.junit.runtime.uitestapplication -product org.eclipse.platform.ide -testpluginname fr.ensma.idm.projet.familydsl
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -consoleLog -version 3 -port 33171 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames fr.ensma.idm.projet.familydsl.model.test.FamilleTest -application org.eclipse.pde.junit.runtime.uitestapplication -product org.eclipse.platform.ide -data /home/perezm/Windows/S5/GitHub/semestre5/Workspace-IDM/../junit-workspace -dev file:/home/perezm/Windows/S5/GitHub/semestre5/Workspace-IDM/.metadata/.plugins/org.eclipse.pde.core/pde-junit/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog -testpluginname fr.ensma.idm.projet.familydsl
+
+!ENTRY org.eclipse.jface.text 2 0 2021-11-24 15:09:08.532
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2021-11-24 15:09:34.353
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.updatesite.artifactRepository
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.getLocalRepositoryLocation(UpdateSiteMetadataRepositoryFactory.java:39)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.loadRepository(UpdateSiteArtifactRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.load(UpdateSiteArtifactRepositoryFactory.java:59)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:81)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:119)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:114)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.restoreSpecialRepositories(ArtifactRepositoryManager.java:145)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getKnownRepositories(AbstractRepositoryManager.java:483)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.getKnownRepositories(CachingRepositoryManager.java:604)
+	at org.eclipse.oomph.p2.core.P2Util.getKnownRepositories(P2Util.java:82)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.isNeeded(P2TaskImpl.java:604)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.initNeededSetupTasks(SetupTaskPerformer.java:1811)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:679)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:415)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

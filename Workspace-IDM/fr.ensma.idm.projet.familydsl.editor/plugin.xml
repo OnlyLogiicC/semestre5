@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated famillemm -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.ensma.idm.projet.familydsl.model.arbregen.presentation.ArbregenModelWizardID"
+            name="%_UI_ArbregenModelWizard_label"
+            class="fr.ensma.idm.projet.familydsl.model.arbregen.presentation.ArbregenModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ArbregenModelFile.gif">
+         <description>%_UI_ArbregenModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated famillemm -->
+      <editor
+            id="fr.ensma.idm.projet.familydsl.model.arbregen.presentation.ArbregenEditorID"
+            name="%_UI_ArbregenEditor_label"
+            icon="icons/full/obj16/ArbregenModelFile.gif"
+            extensions="arbregen"
+            class="fr.ensma.idm.projet.familydsl.model.arbregen.presentation.ArbregenEditor"
+            contributorClass="fr.ensma.idm.projet.familydsl.model.arbregen.presentation.ArbregenActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

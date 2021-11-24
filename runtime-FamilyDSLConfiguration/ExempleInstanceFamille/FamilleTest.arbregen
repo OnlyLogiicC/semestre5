@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arbregen:Famille xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arbregen="http://www.example.org/arbregen" id="Nobles">
+  <membres xsi:type="arbregen:Homme" nom="Manu" age="35" enfants="//@membres.2 //@membres.3">
+    <habitation numero="8" rue="Avenue Blaise Pascal" ville="Chassou"/>
+  </membres>
+  <membres xsi:type="arbregen:Femme" nom="Brigitte" age="50" enfants="//@membres.2 //@membres.3">
+    <habitation numero="8" rue="Avenue Blaise Pascal" ville="Chassou"/>
+  </membres>
+  <membres xsi:type="arbregen:Homme" nom="Manu Jr" age="10" sesParents="" mere="//@membres.1" pere="//@membres.0">
+    <habitation numero="8" rue="Avenue Blaise Pascal" ville="Chassou"/>
+  </membres>
+  <membres xsi:type="arbregen:Femme" nom="Anguela" age="8" mere="//@membres.1" pere="//@membres.0">
+    <habitation numero="8" rue="Avenue Blaise Pascal" ville="Chassou"/>
+  </membres>
+</arbregen:Famille>
