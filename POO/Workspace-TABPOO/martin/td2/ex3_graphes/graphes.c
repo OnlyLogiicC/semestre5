@@ -38,8 +38,8 @@ void ajouterSommet(char valeur, graphe *g){
     if ((*g) == NULL) {
         *g = psom ;
     } else {
-        ite = (*g)->suivant ;
-        while (ite != NULL) {
+        ite = (*g) ;
+        while (ite->suivant != NULL) {
             ite = ite->suivant ;
         }
         ite->suivant = psom ;
@@ -51,6 +51,7 @@ void ajouterArc(char valeur, char s1, char s2, graphe *g) {
     l_arc parc = (l_arc)malloc(sizeof(struct nar)) ;
     l_sommet ite1 = (l_sommet)malloc(sizeof(struct nso));
     l_arc ite2 = (l_arc)malloc(sizeof(struct nar)) ;
+    l_arc ite3 = (l_arc)malloc(sizeof(struct nar)) ;
     if ((*g) == NULL) {
         perror("impossible d'ajouter un arc à un graphe vide, creez d'abord les sommets") ;
         exit(0) ; }
@@ -63,6 +64,7 @@ void ajouterArc(char valeur, char s1, char s2, graphe *g) {
             exit(0) ;
         }
     }
+    printf("recherche s1 ok \n");
     arc.s1 = ite1 ;
     ite1 = (*g) ;
     while (ite1->s.valeur != s2) {
@@ -72,19 +74,47 @@ void ajouterArc(char valeur, char s1, char s2, graphe *g) {
             exit(0) ;
         }
     }
+    printf("recherche s2 ok \n");
     arc.s2 = ite1 ;
     parc->a = arc ;
     parc->suivant = NULL ;
-    ite2 = arc.s1->s.arcs ;
-    while (ite2 != NULL) {
-        ite2 = ite2->suivant ;
+    if (((arc.s1)->s).arcs == NULL){
+        ((arc.s1)->s).arcs = parc ;
+    } else {
+        ite2 = (((arc.s1)->s).arcs) ;
+        while (ite2->suivant != NULL) {
+            ite2 = ite2->suivant ;
+        }
+        ite2->suivant = parc ;
     }
-    ite2->suivant = parc ;
-    ite2 = arc.s2->s.arcs ;
-    while (ite2 != NULL) {
-        ite2 = ite2->suivant ;
+    printf("ajout arc s1 ok\n");
+    if (((arc.s2)->s).arcs == NULL){
+        ((arc.s2)->s).arcs = parc;    
+    } else {
+        ite3 = (((arc.s2)->s).arcs);
+        while (ite3->suivant != NULL) {
+            ite3 = ite3->suivant ;
+        }
+        ite3->suivant = parc ;
     }
-    ite2->suivant = parc ;
-
+    printf("ajout arc s2 ok\n");
 }
 
+void affichergraphe(graphe g) {
+    l_sommet ite1 ;
+    l_arc ite2 ;
+    if (g == NULL) {
+        perror("le grpahe est vide") ;
+        exit(0) ;
+    }
+    ite1 = g ;
+    while (ite1 != NULL) {
+        printf("sommet %c\n", ite1->s.valeur) ;
+        ite2 = ite1->s.arcs ;
+        while (ite2 != NULL) {
+            printf("arc %c = (%c,%c)\n", ite2->a.valeur, (((ite2->a).s1)->s).valeur, (((ite2->a).s2)->s).valeur) ;
+            ite2 = ite2->suivant ;
+        }
+        ite1 = ite1->suivant ;
+    }
+}
