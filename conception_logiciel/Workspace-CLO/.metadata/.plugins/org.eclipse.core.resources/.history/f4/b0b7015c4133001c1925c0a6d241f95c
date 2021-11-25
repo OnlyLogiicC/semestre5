@@ -1,5 +1,0 @@
-package fr.ensma.a3.ia.jeupersonnages.map;
-
-public enum ECouleurBase {
-
-}

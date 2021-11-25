@@ -15,14 +15,14 @@ import org.junit.jupiter.api.Test;
 @TestMethodOrder(OrderAnnotation.class)
 public class TestECouleur {
 	
-	private static ECouleurBase cBleu, cRouge, cVert, cJaune;
+	private static ECouleur cBleu, cRouge, cVert, cJaune;
 	
 	@BeforeAll
 	public static void initAll() {
-		cBleu = ECouleurBase.Bleu;
-		cRouge = ECouleurBase.Rouge;
-		cVert = ECouleurBase.Vert;
-		cJaune = ECouleurBase.Jaune;
+		cBleu = ECouleur.Bleu;
+		cRouge = ECouleur.Rouge;
+		cVert = ECouleur.Vert;
+		cJaune = ECouleur.Jaune;
 	}
 	
 	@Test
@@ -39,11 +39,11 @@ public class TestECouleur {
 	@Test
 	@Order(2)
 	public void testFamilleCouleur() {
-		assertEquals(cRouge,ECouleurBase.getCouleurByFamille("Lannister"));
-		assertEquals(cBleu,ECouleurBase.getCouleurByFamille("Stark"));
-		assertEquals(cJaune,ECouleurBase.getCouleurByFamille("Baratheon"));
-		assertEquals(cVert,ECouleurBase.getCouleurByFamille("Tyrell"));
-		assertEquals(null,ECouleurBase.getCouleurByFamille("Richard"));
+		assertEquals(cRouge,ECouleur.getCouleurByFamille("Lannister"));
+		assertEquals(cBleu,ECouleur.getCouleurByFamille("Stark"));
+		assertEquals(cJaune,ECouleur.getCouleurByFamille("Baratheon"));
+		assertEquals(cVert,ECouleur.getCouleurByFamille("Tyrell"));
+		assertEquals(null,ECouleur.getCouleurByFamille("Richard"));
 	}
 
 	@Test

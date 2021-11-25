@@ -1,42 +1,56 @@
-package fr.ensma.a3.ia.jeupersonnages.elements.personnages.humain ;
+package fr.ensma.a3.ia.jeupersonnages.elements.personnages.humain;
 
-import fr.ensma.a3.ia.jeupersonnages.map.Base ;
-import fr.ensma.a3.ia.jeupersonnages.elements.objets.Catapulte ;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class Guerrier extends PersonnageHumain {
+import fr.ensma.a3.ia.jeupersonnages.comportements.IAttaquableTerre;
+import fr.ensma.a3.ia.jeupersonnages.comportements.IAttaquantTerre;
+import fr.ensma.a3.ia.jeupersonnages.map.Base;
+
+public class Guerrier extends PersonnageHumain implements IGuerrier {
+
+	private static int numInstance = 0;
 	
-	private static Integer numInstance = 1;
-	private Catapulte Cata ;
+	private static final Logger LOGGER = Logger.getLogger(PersonnageHumain.class.getName());
 	
-	Guerrier(final String id, final Float niveauV,final Integer puiss, final Base base) {
-		super(id,niveauV,puiss,base) ;
-		numInstance += 1 ;
-		
+	public final Integer getPuissanceAtt() {
+		return puissanceAtt;
 	}
 	
-	Guerrier(final Float niveauV,final Integer puiss, final Base base) {
-		super("guerrier",niveauV,puiss,base) ;
-		numInstance += 1 ;
+	public Guerrier(final Base labase, final String id, final Float nv, final Integer patt) {
+		super(labase,id,nv,patt);
+		numInstance ++;
 	}
 	
-	public Integer getnumInstance() {
-		return Guerrier.numInstance ;
+	public Guerrier(final Base labase, final Float nv, final Integer patt) {
+		super(labase,"Guerrier(" + (numInstance+1) + ")",nv,patt);
+		numInstance ++;
 	}
 	
 	@Override
-	public Integer getpuissanceAttaque() {
-		return this.puissanceAttaque ;
+	public void aLAttaque(IAttaquableTerre cible) {
+		LOGGER.log(Level.INFO,getIdent() + " dit : Ah Ah " + cible.getIdent() +
+				", je vais t'occir !!! " + "(" + puissanceAtt +")");
+		cible.estAttaque(puissanceAtt);
 	}
 	
-
+	@Override
+	public void estAttaque(Integer puissatt) {
+		setNiveauVie(getNiveauVie()-puissanceAtt/100.0f);
+		LOGGER.log(Level.INFO, getIdent() + " dit : Aiieee ça fait mal !! (nvie -> " 
+				+ getNiveauVie()+")");
+	}
+	
 	@Override
 	public String toString() {
-		return "Classe Guerrier Instance : " + Guerrier.numInstance + "\n" + this.toString() ;
+		return super.toString() + " - PAtt=" + puissanceAtt;
 	}
 
 	@Override
 	public void deplacement() {
-		System.out.println("Le guerrier se deplace avec force et honneur ! En garde");
+		// TODO Auto-generated method stub
 		
 	}
+	
+	
 }

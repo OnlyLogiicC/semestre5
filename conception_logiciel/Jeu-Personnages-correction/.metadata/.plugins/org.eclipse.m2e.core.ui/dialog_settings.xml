@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/perezm/Windows/S5/GitHub/semestre5/conception_logiciel/Jeu-Personnages-correction"/>
 			<item value="/home/rouxn/Windows/A3/workspace_CLO/Jeu-Personnages-correction"/>
 		</list>
 		<list key="projectNameTemplate">

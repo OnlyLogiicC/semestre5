@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>fr.ensma.a3.ia</groupId>
-  <artifactId>Jeu-Personnage</artifactId>
+  <artifactId>Jeu-Personnages</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Jeu-Personnage</name>
+  <name>Jeu-Personnages</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -19,7 +19,7 @@
   </properties>
 
   <dependencies>
-    <dependency>
+         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.6.2</version>
@@ -37,6 +37,7 @@
             <version>5.6.2</version>
             <scope>test</scope>
         </dependency>
+		<!-- Mockito -->
         <dependency>
 		    <groupId>org.mockito</groupId>
 		    <artifactId>mockito-core</artifactId>
@@ -75,13 +76,13 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
-          <configuration>
-  			<archive>
-  				<manifest>
-     				<mainClass>fr.ensma.a3.ia.jeupersonnages.App</mainClass>
- 				 </manifest>
-			</archive>
-		  </configuration>
+           <configuration>
+		   <archive>
+		<manifest>
+     <mainClass>fr.ensma.a3.ia.jeupersonnages.App</mainClass>
+  </manifest>
+</archive>
+</configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
@@ -103,4 +104,16 @@
       </plugins>
     </pluginManagement>
   </build>
+  <reporting>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>3.1.2</version>
+            <configuration>
+                <configLocation>google_checks.xml</configLocation>
+            </configuration>
+        </plugin>
+    </plugins>
+</reporting>
 </project>

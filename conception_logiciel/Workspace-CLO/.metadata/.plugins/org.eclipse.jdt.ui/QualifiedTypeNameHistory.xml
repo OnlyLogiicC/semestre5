@@ -9,4 +9,9 @@
     <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.IRessource"/>
     <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.objets.IObjet"/>
     <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.personnages.IPersonnage"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.comportements.IDeplacable"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.personnages.humain.IGuerrier"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.views.AbstractView"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.elements.personnages.humain.optionguerrier.AbstractOptionGuerrier"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.jeupersonnages.comportements.IAttaquantTerre"/>
 </qualifiedTypeNameHistroy>

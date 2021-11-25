@@ -1,28 +1,41 @@
 package fr.ensma.a3.ia.jeupersonnages.elements;
 
-import java.util.Objects ;
+import java.util.Objects;
 
 import fr.ensma.a3.ia.jeupersonnages.map.Base;
 
 public abstract class ElementJeu {
-	
-	protected Base base ;
-	
-	public ElementJeu(final Base base) {
-		this.base = Objects.requireNonNull(base, "Un elementjeu doit appartenir à une base !") ;
+
+	private Base maBase;
+		
+	public ElementJeu(final Base labase) {
+		maBase = Objects.requireNonNull(labase,"labase ne peut pas être null");
 	}
 	
-	public Base getbase() {
-		return this.base ;
+	public final Base getBase() {
+		return maBase;
 	}
 	
-	public void setbase(Base base) {
-		this.base = base ;
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (this == obj)
+			return true;
+		if (!(obj instanceof ElementJeu)) {
+			return false;
+		}
+		ElementJeu elj = (ElementJeu) obj;
+		return maBase.equals(elj.maBase);
 	}
 	
 	@Override
-	public String toString() {
-		return this.base.toString() ;
+	public int hashCode() {
+		int hash = 1;
+		hash = hash * HASH_MULT_PRIME + maBase.hashCode();
+		return hash;
 	}
-
+	
+	private static final int HASH_MULT_PRIME = 13;
 }

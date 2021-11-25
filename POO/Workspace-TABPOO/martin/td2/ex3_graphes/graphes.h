@@ -12,6 +12,6 @@ typedef l_sommet graphe;
 graphe grapheVide();
 void ajouterSommet(char valeur, graphe *g);
 void ajouterArc(char valeur, char s1, char s2, graphe *g);
-void afficher(graphe g);
+void affichergraphe(graphe g);
 
 #endif

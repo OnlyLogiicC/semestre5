@@ -1,73 +1,132 @@
-package fr.ensma.a3.ia.jeupersonnages.elements.personnages ;
+package fr.ensma.a3.ia.jeupersonnages.elements.personnages;
 
 import java.util.Objects;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-import fr.ensma.a3.ia.jeupersonnages.comportements.IDeplacable ;
+import fr.ensma.a3.ia.jeupersonnages.comportements.EtatAuRepos;
+import fr.ensma.a3.ia.jeupersonnages.comportements.EtatEnDefense;
+import fr.ensma.a3.ia.jeupersonnages.comportements.EtatEnDeplacement;
+import fr.ensma.a3.ia.jeupersonnages.comportements.IDeplacable;
+import fr.ensma.a3.ia.jeupersonnages.comportements.IEtats;
+import fr.ensma.a3.ia.jeupersonnages.comportements.ITroupable;
+import fr.ensma.a3.ia.jeupersonnages.comportements.ResteImmobile;
+import fr.ensma.a3.ia.jeupersonnages.elements.ElementJeu;
+import fr.ensma.a3.ia.jeupersonnages.elements.personnages.humain.PersonnageHumain;
+import fr.ensma.a3.ia.jeupersonnages.map.Base;
+import fr.ensma.a3.ia.jeupersonnages.map.TransitionNotTirableException;
 
-import fr.ensma.a3.ia.jeupersonnages.elements.ElementJeu ;
-import fr.ensma.a3.ia.jeupersonnages.map.Base ;
+public abstract class ElementJeuVivant extends ElementJeu implements IPersonnages, IDeplacable, ITroupable, IEtats {
 
-public abstract class ElementJeuVivant extends ElementJeu implements IDeplacable, IPersonnage {
+	private String ident;
+	private Float niveauVie;
+	protected Integer puissanceAtt;
+	protected IDeplacable compoDeplacement;
+	protected IEtats etatCourant;
+	protected IEtats AuRepos = new EtatAuRepos(this);
+	protected IEtats EnDeplacement = new EtatEnDeplacement(this);
+	protected IEtats EnDefense = new EtatEnDefense(this);
+	private static final Logger LOGGER = Logger.getLogger(PersonnageHumain.class.getName());
 	
-	protected String Ident ;
-	protected Float niveauVie ;
-	protected Integer puissanceAttaque ;
+	public ElementJeuVivant(final Base labase,final String id, final Float nv, final Integer patt) {
+		super(labase);
+		ident = Objects.requireNonNull(id,"id ne peut pas être null");
+		niveauVie = Objects.requireNonNull(nv,"nv ne peut pas etre null");
+		puissanceAtt = Objects.requireNonNull(patt,"patt ne peut pas etre null");
+		getBase().ajoutPersoBase(this);
+		compoDeplacement = new ResteImmobile();
+		etatCourant =  AuRepos;
+		
+		
+	}
 	
-	public ElementJeuVivant(final String id, final Float niveauV, final Integer puiss, final Base base) {
-		super(base) ;
-		this.Ident = Objects.requireNonNull(id, "Il faut un identifiant a l'element") ;
-		this.niveauVie = Objects.requireNonNull(niveauV, "Il faut un niveau de vie") ;
-		this.puissanceAttaque = Objects.requireNonNull(puiss, "Il faut une puissance d'attaque (0 pour un ouvrier)") ;
+
+	public ElementJeuVivant(final Base labase, final String id, final Float nv) {
+		super(labase);
+		ident = Objects.requireNonNull(id,"id ne peut pas être null");
+		niveauVie = Objects.requireNonNull(nv,"nv ne peut pas etre null");
+		puissanceAtt = 0;
+		getBase().ajoutPersoBase(this);
+		compoDeplacement = new ResteImmobile();
+		etatCourant= AuRepos;
 	}
 	
 	@Override
-	public String getIdent() {
-		return this.Ident ;
+	public final String getIdent() {
+		return ident;
+	}
+	
+	public final Float getNiveauVie() {
+		return niveauVie;
+	}
+	
+	public void setNiveauVie(final Float nvie) {
+		niveauVie = nvie;
+	}
+	@Override
+	public String presente_toi() {
+		return toString();
+	}
+	
+	public void setcompoDeplacement(IDeplacable compo) {
+		compoDeplacement = compo;
+	}
+	
+	
+	@Override
+	public void deplacement(IDeplacable p) {
+		try {
+			etatCourant.deplacer();
+			compoDeplacement.deplacement(this);
+		} catch(TransitionNotTirableException e) {
+			LOGGER.log(Level.INFO, "demande de deplacment non valide");
+		}
+	}
+	
+	@Override 
+	public void deplacer() throws TransitionNotTirableException {
+		etatCourant.deplacer();
 	}
 	
 	@Override
-	public Float getniveauVie() {
-		return this.niveauVie ;
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (this == obj)
+			return true;
+		if (!(obj instanceof ElementJeuVivant)) {
+			return false;
+		}
+		if (! super.equals(obj)) {
+			return false;
+		}
+		ElementJeuVivant eljv = (ElementJeuVivant) obj;
+		return ((ident.compareTo(eljv.ident) == 0) && niveauVie.equals(eljv.niveauVie)
+				&& puissanceAtt.equals(eljv.puissanceAtt));
 	}
 	
-	public void setIdent(final String id) {
-		this.Ident = id ;
+	@Override
+	public int hashCode() {
+		int hash = super.hashCode();
+		hash = hash * HASH_MULT_PRIME + ident.hashCode();
+		hash = hash * HASH_MULT_PRIME + niveauVie.hashCode();
+		hash = hash * HASH_MULT_PRIME + puissanceAtt.hashCode();
+		return hash;
 	}
 	
-	public void setniveauVie(final Float x) {
-		this.niveauVie = x ;
-	}
+	private static final int HASH_MULT_PRIME = 7;
 
-	public void setpuissanceAttaque(final Integer puiss) {
-		this.puissanceAttaque = puiss ;
+	public IEtats getAuRepos() {
+		return AuRepos;
 	}
 	
-	@Override
-	public void Rappel() {
-		System.out.println(this.Ident + "rentre à la base " + this.base.getnomBase() + "!!!\n");
+	public IEtats getEnDeplacement() {
+		return EnDeplacement;
 	}
 	
-	@Override
-	public String toString() {
-		return this.base.toString() + "NomElementJeuVivant : " + this.Ident + "\nNiveauVie :" + this.niveauVie + "\nPuissanceAttaque" + this.puissanceAttaque + "\n" ;
+	public void setEtatCourant(IEtats etat) {
+		etatCourant = etat;
 	}
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
