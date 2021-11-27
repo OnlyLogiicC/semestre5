@@ -1,15 +1,20 @@
 package fr.ensma.a3.ia;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import fr.ensma.a3.ia.listener.*;
 
 public class ConvertisseurED extends Application{
 
@@ -34,10 +39,22 @@ public class ConvertisseurED extends Application{
 		choixSens.getSelectionModel().select(0);
 		actConvert = new Button("Conversion !!!");
 		panBouton.getChildren().addAll(choixSens,actConvert);
-		root2.getChildren().addAll(panBouton);
+		root2.getChildren().add(panBouton);
 		champSortie = new TextField();
 		champSortie.setEditable(false);
 		root2.getChildren().addAll(champSortie);
+		
+		ESensConv h1 = new ESensConv(this) ;
+		choixSens.addEventHandler(ActionEvent.ACTION, h1);
+		champEntree.addEventFilter(KeyEvent.KEY_RELEASED,
+				new EventHandler<KeyEvent>() {
+					@Override
+					public void handle(KeyEvent event) {
+						if (event.getCode() == KeyCode.A) {
+							DelTextField() ;
+							event.consume() ;
+						}
+					}});
 		Scene scene = new Scene(root2, 600, 100);
 		
 		primaryStage.setScene(scene);
@@ -49,5 +66,16 @@ public class ConvertisseurED extends Application{
 	public static void main(String[] args) {
 		launch(args);
 	}
+	
+	
+	public void afficherSens() {
+		System.out.println(this.choixSens.getValue());
+	}
+	
+	public void DelTextField() {
+		champEntree.setText("") ;
+		champSortie.setText("") ;
+	}
+	
 	
 }

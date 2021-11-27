@@ -4,4 +4,11 @@
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.geometry.Orientation"/>
     <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.ConvertisseurED"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.listener.ESensConv"/>
+    <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="javafx.scene.input.KeyEvent"/>
+    <fullyQualifiedTypeName name="javafx.scene.input.KeyCode"/>
+    <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
 </qualifiedTypeNameHistroy>
