@@ -87,7 +87,8 @@ public class ConvertisseurED extends Application{
 		champSortie.setText("") ;
 	}
 	
-	public void afficherConversion() {
+	public afficherConversion() {
+		System.out.println();("Conversion!!") ;
 	}
 	
 	

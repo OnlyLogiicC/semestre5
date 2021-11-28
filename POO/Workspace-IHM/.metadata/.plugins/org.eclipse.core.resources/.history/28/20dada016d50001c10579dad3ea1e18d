@@ -88,6 +88,7 @@ public class ConvertisseurED extends Application{
 	}
 	
 	public void afficherConversion() {
+		System.out.println("Conversion!!") ;
 	}
 	
 	

@@ -8,8 +8,7 @@
 
 
 t_blackboard initbboard(int valeur){
-    t_blackboard board;
-    board =(t_blackboard) malloc(sizeof(struct blackboard));
+    t_blackboard board = (t_blackboard)malloc(sizeof(struct blackboard));
     board->val = valeur ;
     board->fresh = 1;
     pthread_mutex_init(&(board->m),0);
@@ -26,6 +25,7 @@ void ecriture(t_blackboard board, int message){
 int lecture(t_blackboard board){
     pthread_mutex_lock(&(board->m));
     board->fresh =0;
+    pthread_mutex_unlock(&(board->m));
     return board->val;
 }
 
@@ -34,10 +34,12 @@ int  lecture2(t_blackboard board, int * message){
     pthread_mutex_lock(&(board->m));
     board->fresh =0;
     * message = board->val;
+    pthread_mutex_unlock(&(board->m));
     return nouvelle ;
 }
 
 void killbboard(t_blackboard board){
     pthread_mutex_destroy(&(board->m));
     free(board);
+    bb = NULL ;
 }
