@@ -24,7 +24,7 @@ t_bal1_int initbboard(int valeur){
 }
 
 void envoyer(t_bal1_int board, int message){
-    pthread_mutex_lock(&(board->m);
+    pthread_mutex_lock(&(board->m));
     printf("yo2\n") ;
     board->val = message;
     board->fresh = 1;
@@ -38,6 +38,7 @@ int recevoir(t_bal1_int board){
         pthread_cond_wait(&(board->c),&(board->m));
     }
     board->fresh =0;
+    pthread_mutex_unlock(&(board->m));
     return board->val;
 }
 
