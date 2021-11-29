@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-    <fullyQualifiedTypeName name="javafx.geometry.Orientation"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
-<<<<<<< HEAD
-=======
-    <fullyQualifiedTypeName name="fr.ensma.a3.ia.ConvertisseurED"/>
+    <fullyQualifiedTypeName name="java.lang.System.Logger"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
     <fullyQualifiedTypeName name="fr.ensma.a3.ia.listener.ESensConv"/>
-    <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
-    <fullyQualifiedTypeName name="javafx.scene.input.KeyEvent"/>
-    <fullyQualifiedTypeName name="javafx.scene.input.KeyCode"/>
-    <fullyQualifiedTypeName name="javafx.scene.input.MouseEvent"/>
-    <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
->>>>>>> 1ff3a09085dded4d28978de065e7aed03c752d14
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.action.IActionObservable"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.action.IActionObserver"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,17 @@
+package fr.ensma.a3.ia.convertisseur.mvc.action;
+
+public class ActionMdl {
+
+	private ActionCtrl controlAction;
+	private ActionVue vueAction;
+	
+	public ActionMdl() {
+		controlAction = new ActionCtrl(this);
+		vueAction = controlAction.getVue();
+	}
+	
+	public ActionVue getVue() {
+		return vueAction;
+	}
+	
+}
