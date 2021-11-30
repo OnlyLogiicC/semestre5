@@ -5,5 +5,23 @@
     <fullyQualifiedTypeName name="fr.ensma.a3.ia.listener.ESensConv"/>
     <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.action.IActionObservable"/>
     <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.action.IActionObserver"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.automate.EtatEnable"/>
+    <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.textMdl"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.textVue"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javafx.scene.input.KeyEvent"/>
+    <fullyQualifiedTypeName name="javafx.scene.input.KeyCode"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.automate.EtatDisable"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.ITextObserver"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.automate.IEtatText"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.automate.AbstractEtat"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.automate.EtatRempli"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.textCtrl"/>
+    <fullyQualifiedTypeName name="fr.ensma.a3.ia.mvc.textfield.automate.TransitionTextException"/>
 </qualifiedTypeNameHistroy>
