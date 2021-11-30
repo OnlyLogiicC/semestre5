@@ -1,6 +1,6 @@
-package fr.ensma.a3.ia.convertisseur.mvc.action.automate;
+package fr.ensma.a3.ia.mvc.action.automate;
 
-import fr.ensma.a3.ia.convertisseur.mvc.action.ActionCtrl;
+import fr.ensma.a3.ia.mvc.action.ActionCtrl;
 
 public class EtatAllDisable extends AbstractEtat{
 

@@ -1,1 +1,1 @@
-package fr.ensma.a3.ia.convertisseur.mvc.action.automate;
+package fr.ensma.a3.ia.mvc.action.automate;

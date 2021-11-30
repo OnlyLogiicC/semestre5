@@ -1,6 +1,6 @@
-package fr.ensma.a3.ia.convertisseur.mvc.action.automate;
+package fr.ensma.a3.ia.mvc.action.automate;
 
-import fr.ensma.a3.ia.convertisseur.mvc.action.ActionCtrl;
+import fr.ensma.a3.ia.mvc.action.ActionCtrl;
 
 public class EtatAllEnable extends AbstractEtat {
 
@@ -8,6 +8,12 @@ public class EtatAllEnable extends AbstractEtat {
 	
 	public EtatAllEnable(ActionCtrl ctrl) {
 		autom = ctrl;
+	}
+	
+	
+	@Override
+	public void disableButton() throws TransitionActionException {
+		autom.setEtatCourant(autom.getButtonDisable());
 	}
 	
 	@Override
