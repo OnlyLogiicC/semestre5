@@ -1,0 +1,21 @@
+package fr.ensma.a3.ia.mvc.textfield;
+
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
+import javafx.scene.control.TextField;
+
+public class textVue extends TextField implements EventHandler<KeyEvent>{
+	
+	private textMdl model ;
+	private textCtrl control ;
+	
+	
+	public textVue(textMdl mdl, textCtrl ctrl) {
+		super() ;
+		setAlignment(Pos.TOP_CENTER) ;
+		
+		model = mdl ;
+		control = ctrl ;
+	}
+
+}

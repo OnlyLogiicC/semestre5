@@ -1,0 +1,28 @@
+package fr.ensma.a3.ia.mvc.textfield;
+
+import fr.ensma.a3.ia.mvc.textfield.automate.EtatDisable;
+import fr.ensma.a3.ia.mvc.textfield.automate.EtatEnable;
+import fr.ensma.a3.ia.mvc.textfield.automate.EtatRempli;
+import fr.ensma.a3.ia.mvc.textfield.automate.IEtatText;
+
+public class textCtrl {
+	
+	private textVue vue ;
+	private textMdl model ;
+	
+	private IEtatText etatCourant ;
+	private IEtatText etatDisable = new EtatDisable(this) ;
+	private IEtatText etatEnable = new EtatEnable(this) ;
+	private IEtatText etatRempli = new EtatRempli(this) ;
+	
+	public textCtrl(final textMdl mdl) {
+		model = mdl ;
+		vue = new textVue(this, model) ;
+		etatCourant = etatDisable ;
+		//TODO appel fonctions vue.set...()
+		
+	}
+	
+	
+
+}

@@ -705,3 +705,309 @@
 2021-11-29 19:06:06,374 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Martin\Documents\GitHub\semestre5\POO\Workspace-IHM\Convertisseur-UI\src\main\resources
 2021-11-29 19:06:06,375 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-11-29 19:06:06,375 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Martin\Documents\GitHub\semestre5\POO\Workspace-IHM\Convertisseur-UI\src\test\resources
+2021-11-30 13:51:06,464 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-11-30 13:51:09,527 [Worker-5: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.ensma.a3.ia:Convertisseur-UI:1.0-SNAPSHOT @ /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/pom.xml.
+2021-11-30 13:51:10,472 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 13:51:10,472 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 13:51:10,474 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 13:51:10,476 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 13:52:50,858 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 13:52:50,858 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 13:52:50,859 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 13:52:50,859 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 13:54:16,819 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 13:54:16,819 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 13:54:16,821 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 13:54:16,821 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:01:23,619 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:01:23,619 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:01:23,620 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:01:23,620 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:09:11,997 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:09:11,997 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:09:11,998 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:09:11,998 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:10:00,287 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:10:00,287 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:10:00,288 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:10:00,288 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:10:54,024 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:10:54,024 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:10:54,025 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:10:54,025 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:11:12,654 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:11:12,654 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:11:12,656 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:11:12,657 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:16:59,724 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:16:59,725 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:16:59,726 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:16:59,726 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:18:59,966 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:18:59,966 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:18:59,969 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:18:59,969 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:19:33,867 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:19:33,867 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:19:33,868 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:19:33,868 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:19:44,352 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:19:44,352 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:19:44,353 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:19:44,354 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:19:47,429 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:19:47,429 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:19:47,430 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:19:47,430 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:20:12,279 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:12,279 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:20:12,279 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:12,279 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:20:17,516 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:17,516 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:20:17,517 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:17,517 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:20:22,667 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:22,667 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:20:22,668 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:22,669 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:20:48,247 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:48,247 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:20:48,248 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:20:48,248 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:21:14,390 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:21:14,390 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:21:14,391 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:21:14,391 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:21:30,318 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:21:30,318 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:21:30,319 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:21:30,319 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:21:44,918 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:21:44,919 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:21:44,919 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:21:44,920 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:22:00,715 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:22:00,716 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:22:00,716 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:22:00,716 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:22:14,051 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:22:14,052 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:22:14,052 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:22:14,052 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:23:48,694 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:23:48,694 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:23:48,695 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:23:48,695 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:24:01,783 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:24:01,783 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:24:01,784 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:24:01,784 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:24:12,159 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:24:12,159 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:24:12,160 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:24:12,160 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:26:00,223 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:26:00,224 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:26:00,224 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:26:00,225 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:30:46,304 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:30:46,304 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:30:46,305 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:30:46,305 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:34:20,815 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:34:20,815 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:34:20,816 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:34:20,816 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:35:13,658 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:35:13,658 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:35:13,658 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:35:13,659 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:37:09,791 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:37:09,791 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:37:09,791 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:37:09,791 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:47:50,703 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:47:50,703 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:47:50,704 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:47:50,704 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 14:53:30,420 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:53:30,420 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 14:53:30,421 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 14:53:30,421 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:01:24,224 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:01:24,224 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:01:24,225 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:01:24,225 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:06:25,657 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:06:25,658 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:06:25,658 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:06:25,658 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:06:50,133 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:06:50,134 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:06:50,134 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:06:50,134 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:07:04,104 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:07:04,104 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:07:04,105 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:07:04,105 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:17:56,946 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:17:56,946 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:17:56,947 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:17:56,947 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:18:04,869 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:04,870 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:18:04,870 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:04,870 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:18:18,411 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:18,411 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:18:18,412 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:18,412 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:18:40,237 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:40,237 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:18:40,238 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:40,238 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:18:56,371 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:56,371 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:18:56,372 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:18:56,372 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:21:39,576 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:21:39,576 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:21:39,577 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:21:39,577 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:21:52,168 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:21:52,168 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:21:52,168 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:21:52,168 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:32:25,990 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:32:25,990 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:32:25,990 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:32:25,990 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:38:13,690 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:38:13,690 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:38:13,691 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:38:13,691 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:44:10,100 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:44:10,100 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:44:10,101 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:44:10,101 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:44:41,014 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:44:41,014 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:44:41,015 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:44:41,015 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:45:01,472 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:45:01,472 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:45:01,473 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:45:01,473 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:45:22,643 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:45:22,643 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:45:22,643 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:45:22,643 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:46:17,933 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:46:17,933 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:46:17,934 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:46:17,934 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:51:03,448 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:51:03,448 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:51:03,449 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:51:03,449 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:53:42,577 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:53:42,578 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:53:42,578 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:53:42,578 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:54:47,106 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:54:47,106 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:54:47,107 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:54:47,107 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:55:39,123 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:55:39,123 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:55:39,123 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:55:39,124 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 15:56:13,930 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:56:13,930 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 15:56:13,930 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 15:56:13,930 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:01:53,543 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:01:53,543 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:01:53,544 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:01:53,544 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:07:52,981 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:07:52,982 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:07:52,983 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:07:52,983 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:08:02,830 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:08:02,830 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:08:02,831 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:08:02,831 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:09:19,081 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:09:19,081 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:09:19,082 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:09:19,082 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:13:20,632 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:13:20,632 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:13:20,633 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:13:20,633 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:13:29,149 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:13:29,149 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:13:29,149 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:13:29,149 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:15:08,958 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:15:08,958 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:15:08,959 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:15:08,959 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:15:28,172 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:15:28,172 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:15:28,172 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:15:28,172 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:16:23,973 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:16:23,973 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:16:23,974 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:16:23,974 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:23:01,475 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:23:01,475 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:23:01,476 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:23:01,476 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:30:32,483 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:30:32,483 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:30:32,484 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:30:32,484 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:31:43,237 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:31:43,237 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:31:43,238 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:31:43,238 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:32:58,177 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:32:58,177 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:32:58,178 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:32:58,178 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:33:07,407 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:33:07,407 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:33:07,408 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:33:07,408 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:33:09,873 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:33:09,873 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:33:09,874 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:33:09,874 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:33:13,790 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:33:13,790 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:33:13,791 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:33:13,791 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:35:10,943 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:35:10,943 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:35:10,943 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:35:10,943 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:39:44,250 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:39:44,250 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:39:44,251 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:39:44,251 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:41:23,544 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:41:23,544 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:41:23,544 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:41:23,544 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:41:30,646 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:41:30,646 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:41:30,647 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:41:30,647 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-11-30 16:42:21,769 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:42:21,769 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
+2021-11-30 16:42:21,770 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 16:42:21,770 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
