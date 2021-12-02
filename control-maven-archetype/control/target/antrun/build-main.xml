@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project name="maven-antrun-" default="main">
-  <target name="main">
-    <property name="local.dist.dir" value="C:\Users\Martin\Documents\GitHub\BE\control-maven-archetype\control\target" />
-    <property name="remote.runtime.encoding" value="UTF-8" />
-    <property name="dist.jar.name" value="control" />
-    <ant antfile="antrun/build.xml" target="clean-remote" />
-  </target>
-</project>
