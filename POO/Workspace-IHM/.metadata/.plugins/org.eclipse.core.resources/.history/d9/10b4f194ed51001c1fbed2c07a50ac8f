@@ -1,0 +1,10 @@
+package fr.ensma.a3.ia.mvc.textfield.automate;
+
+public class AbstractEtat implements IEtatText {
+
+	@Override
+	public void enableText() throws TransitionTextException{
+		throw new TransitionTextException();
+	}
+
+}

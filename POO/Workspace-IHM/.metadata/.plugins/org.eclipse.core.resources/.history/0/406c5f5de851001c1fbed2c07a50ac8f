@@ -1,0 +1,26 @@
+package fr.ensma.a3.ia.mvc.textfield;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import fr.ensma.a3.ia.mvc.action.IActionObserver;
+
+public class textMdl {
+	
+	private textCtrl control ;
+	private textVue vue ;
+	
+	private List<ITextObserver> mesAbos;
+	
+	public textMdl() {
+		control = new textCtrl(this) ;
+		vue = control.getVue() ;
+		mesAbos = new ArrayList<ITextObserver>() ;
+	}
+	
+	public textVue getVue() { return vue ; }
+	
+	public void addTextHandler(IActionObserver obs) {
+		mesAbo.add(obs);
+	}
+}

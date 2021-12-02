@@ -1,0 +1,8 @@
+package fr.ensma.a3.ia.mvc.action.VBox;
+
+public interface IActionObserver {
+	
+	public void choixSensEvent();
+	public void actionEvent();
+	
+}

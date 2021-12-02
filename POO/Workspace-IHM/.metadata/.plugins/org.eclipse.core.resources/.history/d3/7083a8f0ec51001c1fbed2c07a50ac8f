@@ -1,0 +1,7 @@
+package fr.ensma.a3.ia.mvc.textfield.automate;
+
+public interface IEtatText {
+	public void enableText() throws TransitionTextException;
+	public void disableText() throws TransitionTextException;
+	
+}
