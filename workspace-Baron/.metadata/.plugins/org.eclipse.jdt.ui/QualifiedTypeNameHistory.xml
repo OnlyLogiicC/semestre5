@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.net.URI"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.core.UriBuilder"/>
+    <fullyQualifiedTypeName name="org.glassfish.jersey.logging.LoggingFeature"/>
+    <fullyQualifiedTypeName name="java.lang.System.Logger.Level"/>
+    <fullyQualifiedTypeName name="org.glassfish.jersey.message.internal.TracingLogger.Level"/>
+    <fullyQualifiedTypeName name="java.util.logging.Level"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.DefaultValue"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.HeaderParam"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
+</qualifiedTypeNameHistroy>

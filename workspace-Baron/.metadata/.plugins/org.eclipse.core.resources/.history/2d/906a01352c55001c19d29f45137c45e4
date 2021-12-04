@@ -1,0 +1,13 @@
+package fr.mickaelbaron.jaxrstutorialexercice1;
+
+@Path("hello")
+@Produces(MediaType.TEXT_PLAIN)
+public class HelloResource {
+    public HelloResource() { }
+
+    @GET
+	public String getHello() {
+    	return "Bonjour ENSMA";
+	}
+}
+
