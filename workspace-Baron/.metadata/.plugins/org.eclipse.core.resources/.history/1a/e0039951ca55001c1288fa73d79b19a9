@@ -1,0 +1,42 @@
+package fr.mickaelbaron.jaxrstutorialexercice2;
+
+// TODO: le chemin racine de la ressource doit débuter par `/trains`.
+// TODO: les formats du contenu des réponses sont XML puis JSON.
+public class TrainResource {
+
+    public TrainResource() { }
+
+    // TODO: préciser le verbe HTTP.
+    public List<Train> getTrains() {
+        System.out.println("getTrains");
+
+        return TrainBookingDB.getTrains();
+    }
+
+    // TODO: préciser le verbe HTTP
+    // TODO: le chemin doit commencer par `/trainid-`  et se finir
+    // par un template paramètre désignant l'identifiant du train.
+    public Train getTrain(String trainId) {
+        System.out.println("getTrain");
+
+        Optional<Train> trainById = TrainBookingDB.getTrainById(trainId);
+
+        if (trainById.isPresent()) {
+            return trainById.get();
+        } else {
+            // TODO: déclencher une exception avec un statut NOT_FOUND.
+        }
+    }
+
+    // TODO: préciser le verbe HTTP.
+    // TODO: le chemin doit commencer par `/search`.
+    // Les paramètres sont tous des paramètres de requête.
+    public ??? searchTrainsByCriteria(String departure, String arrival, String departureTime) {
+        System.out.println("TrainResource.searchTrainsByCriteria()");
+
+        // TODO: retourner une réponse avec :
+        //   1/ les trois paramètres de requête en en-tête
+        //   2/ un sous-ensemble de la liste des trains
+        //      (exemple : `TrainBookingDB.getTrains().subList(0, 2)`)
+    }
+}
