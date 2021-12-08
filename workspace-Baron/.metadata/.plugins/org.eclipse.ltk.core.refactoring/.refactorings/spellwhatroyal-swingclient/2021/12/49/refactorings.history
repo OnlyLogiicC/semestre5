@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;readEntity&apos; from expression &apos;response.readEntity(CredentialsResult.class)&apos;&#x0A;- Original project: &apos;spellwhatroyal-swingclient&apos;&#x0A;- Variable name: &apos;readEntity&apos;&#x0A;- Destination method: &apos;fr.mickaelbaron.spellwhatroyal.swingclient.controller.SpellWhatRoyalController.createPlayer()&apos;&#x0A;- Variable expression: &apos;response.readEntity(CredentialsResult.class)&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;readEntity&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;fr.mickaelbaron.spellwhatroyal.swingclient.controller{SpellWhatRoyalController.java" name="readEntity" replace="true" selection="2872 45" stamp="1638960441972" varType="false" version="1.0"/>
+</session>

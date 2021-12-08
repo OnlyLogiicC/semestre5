@@ -6,12 +6,9 @@
     <fullyQualifiedTypeName name="javax.ws.rs.DefaultValue"/>
     <fullyQualifiedTypeName name="javax.ws.rs.HeaderParam"/>
     <fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
-    <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
-    <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
     <fullyQualifiedTypeName name="javax.ws.rs.QueryParam"/>
     <fullyQualifiedTypeName name="fr.mickaelbaron.jaxrstutorialexercice2.TrainBookingDB"/>
     <fullyQualifiedTypeName name="java.net.URI"/>
-    <fullyQualifiedTypeName name="javax.ws.rs.core.UriBuilder"/>
     <fullyQualifiedTypeName name="org.glassfish.jersey.server.ResourceConfig"/>
     <fullyQualifiedTypeName name="org.glassfish.grizzly.http.server.HttpServer"/>
     <fullyQualifiedTypeName name="org.glassfish.jersey.logging.LoggingFeature"/>
@@ -29,4 +26,14 @@
     <fullyQualifiedTypeName name="javax.ws.rs.POST"/>
     <fullyQualifiedTypeName name="javax.ws.rs.Path"/>
     <fullyQualifiedTypeName name="fr.mickaelbaron.jaxrstutorialexercice2.TrainBookingResource"/>
+    <fullyQualifiedTypeName name="fr.mickaelbaron.spellwhatroyal.api.model.Credentials"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.client.Entity"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="fr.mickaelbaron.spellwhatroyal.api.model.CredentialsResult"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.client.WebTarget"/>
+    <fullyQualifiedTypeName name="fr.mickaelbaron.spellwhatroyal.api.model.GameData"/>
+    <fullyQualifiedTypeName name="fr.mickaelbaron.spellwhatroyal.api.model.GameState"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.core.UriBuilder"/>
 </qualifiedTypeNameHistroy>
