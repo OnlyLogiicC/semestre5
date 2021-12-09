@@ -1,7 +1,0 @@
-package fr.ensma.a3.ia.listener;
-
-import javafx.event.EventHandler;
-
-public class ESensConv implements EventHandler<ActionEvent> {
-
-}

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI"/>
 			<item value="/home/perezm/Windows/S5/Workspace-IHM/Convertisseur-UI"/>
 		</list>
 		<list key="projectNameTemplate">

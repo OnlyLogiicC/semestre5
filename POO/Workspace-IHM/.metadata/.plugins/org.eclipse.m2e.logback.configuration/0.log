@@ -1015,3 +1015,5 @@
 2021-11-30 16:44:32,629 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/main/resources
 2021-11-30 16:44:32,630 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-11-30 16:44:32,630 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/perezm/Documents/GitHub/semestre5/POO/Workspace-IHM/Convertisseur-UI/src/test/resources
+2021-12-06 11:39:17,833 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-12-06 11:40:28,120 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
