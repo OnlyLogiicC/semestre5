@@ -1,14 +1,15 @@
-package fr.ensma.ia;
+package fr.ensma.ia.thread;
 
-public class TH2_runnable implements Runnable {
+import fr.ensma.ia.tabNoir;
+
+public class TH2_Thread extends Thread {
 	
-	private tabNoir tab ;
+	tabNoir tab ;
 	
-	public TH2_runnable(tabNoir t) {
+	public TH2_Thread(tabNoir t) {
 		tab = t ;
-		
 	}
-
+	
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
@@ -31,5 +32,4 @@ public class TH2_runnable implements Runnable {
 	public void setTab(tabNoir tab) {
 		this.tab = tab;
 	}
-
 }

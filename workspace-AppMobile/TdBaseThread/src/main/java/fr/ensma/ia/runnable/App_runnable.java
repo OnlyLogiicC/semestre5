@@ -1,4 +1,6 @@
-package fr.ensma.ia;
+package fr.ensma.ia.runnable;
+
+import fr.ensma.ia.tabNoir;
 
 /**
  * Hello world!
