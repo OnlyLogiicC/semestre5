@@ -1,0 +1,1 @@
+package fr.ensma.ia.partie;
