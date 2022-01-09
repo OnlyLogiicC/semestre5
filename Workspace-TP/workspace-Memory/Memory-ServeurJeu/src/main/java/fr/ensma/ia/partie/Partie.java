@@ -63,4 +63,8 @@ public class Partie {
 	public void setListJoueurs(List<AbstractJoueur> listJoueurs) {
 		ListJoueurs = listJoueurs;
 	}
+	
+	public boolean testfinPartie() {
+		return false ;
+	}
 }
