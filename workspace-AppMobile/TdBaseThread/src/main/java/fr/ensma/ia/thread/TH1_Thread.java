@@ -13,15 +13,20 @@ public class TH1_Thread extends Thread {
 	
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		while (true) {
+		boolean inter = false ;
+		while (!isInterrupted()) {
 			System.out.println(tab.getVal()) ;
 			tab.setVal(tab.getVal() + 1); ;
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(200);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				inter = true ;
+			} finally {
+				if (inter) {
+					this.interrupt();
+				}
 			}
 		}
 
