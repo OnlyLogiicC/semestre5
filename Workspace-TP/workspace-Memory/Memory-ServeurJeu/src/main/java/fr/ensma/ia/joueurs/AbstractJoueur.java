@@ -12,7 +12,7 @@ public abstract class AbstractJoueur {
 	}
 	
 	public void Jouer() {
-		
+		// TODO : fonction qui gère les actions du joueur pendant son tour
 	}
 
 	public String getPseudo() {

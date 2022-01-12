@@ -7,64 +7,64 @@ import fr.ensma.ia.joueurs.AbstractJoueur;
 import fr.ensma.ia.plateau.Plateau;
 
 public class Partie {
-	
-	private String id ;
-	private Integer NbJoueursReels ;
-	private Plateau plateau ;
-	private List<AbstractJoueur> ListJoueurs;
-	
-	public Partie(String id, Integer nbjoueursreels, Integer NbPaires, Integer taille, Integer nbcartemyst) {
-		
-		this.id = id ;
-		this.NbJoueursReels = nbjoueursreels ;
-		this.plateau = new Plateau("plateau " + id, taille, NbPaires, nbcartemyst) ; // il faut (taille - nbcartemyst)/2 >= NbPaires : le plateau doit être plus grand que le nombre de carte mini
-		this.ListJoueurs = new ArrayList<AbstractJoueur>() ;
+    
+    private String id ;
+    private Integer NbJoueursReels ;
+    private Plateau plateau ;
+    private List<AbstractJoueur> ListJoueurs;
+    
+    public Partie(String id, Integer nbjoueursreels, Integer NbPaires, Integer taille, Integer nbcartemyst) {
+        
+        this.id = id ;
+        this.NbJoueursReels = nbjoueursreels ;
+        this.plateau = new Plateau("plateau " + id, taille, NbPaires, nbcartemyst) ; // il faut (taille - nbcartemyst)/2 >= NbPaires : le plateau doit être plus grand que le nombre de carte mini
+        this.ListJoueurs = new ArrayList<AbstractJoueur>() ;
 
-	}
-	
-	public void start() {
-		
-	}
-	
-	public void ajoutJoueur(AbstractJoueur j) {
-		
-		//mettre à 0 le nombre de paires gagnées du joueur et l'ajouter à la liste de joueurs
-		
-	}
+    }
+    
+    public void start() {
+        // TODO : lance la partie
+    }
+    
+    private void ajoutJoueur(AbstractJoueur j) {
+        
+        //mettre à 0 le nombre de paires gagnées du joueur et l'ajouter à la liste de joueurs
+        
+    }
 
-	public String getId() {
-		return id;
-	}
+    public String getId() {
+        return id;
+    }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public Integer getNbJoueursReels() {
-		return NbJoueursReels;
-	}
+    public Integer getNbJoueursReels() {
+        return NbJoueursReels;
+    }
 
-	public void setNbJoueursReels(Integer nbJoueursReels) {
-		NbJoueursReels = nbJoueursReels;
-	}
+    public void setNbJoueursReels(Integer nbJoueursReels) {
+        NbJoueursReels = nbJoueursReels;
+    }
 
-	public Plateau getPlateau() {
-		return plateau;
-	}
+    public Plateau getPlateau() {
+        return plateau;
+    }
 
-	public void setPlateau(Plateau plateau) {
-		this.plateau = plateau;
-	}
+    public void setPlateau(Plateau plateau) {
+        this.plateau = plateau;
+    }
 
-	public List<AbstractJoueur> getListJoueurs() {
-		return ListJoueurs;
-	}
+    public List<AbstractJoueur> getListJoueurs() {
+        return ListJoueurs;
+    }
 
-	public void setListJoueurs(List<AbstractJoueur> listJoueurs) {
-		ListJoueurs = listJoueurs;
-	}
-	
-	public boolean testfinPartie() {
-		return false ;
-	}
+    public void setListJoueurs(List<AbstractJoueur> listJoueurs) {
+        ListJoueurs = listJoueurs;
+    }
+    
+    private boolean testfinPartie() {
+        return false ; // TODO : teste si la partie est terminée i.e. toutes les cartes classiques sont gagnées
+    }
 }

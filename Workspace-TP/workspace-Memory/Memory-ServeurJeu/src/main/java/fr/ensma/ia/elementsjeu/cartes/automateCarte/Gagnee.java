@@ -12,15 +12,15 @@ public class Gagnee extends AbstractEtatCarte {
 	}
 	
 	public void Retourner() {
-		
+		//TODO : transition impossible
 	}
 	
 	public void Retirer() {
-		
+		//TODO : transition impossible
 	}
 	
 	public void Replacer() {
-		
+		//TODO : transition vers cachee
 	}
 
 	public AbstractCarte getCarte() {

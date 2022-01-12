@@ -287,6 +287,10 @@
                           <styles xmi:type="notation:FontStyle" xmi:id="_GUE5dHCxEeyAj6tns2Eq3A" fontName="Segoe UI" fontHeight="8"/>
                           <layoutConstraint xmi:type="notation:Location" xmi:id="_GUE5dXCxEeyAj6tns2Eq3A"/>
                         </children>
+                        <children xmi:type="notation:Node" xmi:id="_GUE5dnCxEeyAj6tns2Eq3A" type="3010" element="_Ia0F0XCYEeyP_cySz-1F-w">
+                          <styles xmi:type="notation:FontStyle" xmi:id="_GUE5d3CxEeyAj6tns2Eq3A" fontName="Segoe UI" fontHeight="8"/>
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_GUE5eHCxEeyAj6tns2Eq3A"/>
+                        </children>
                         <styles xmi:type="notation:SortingStyle" xmi:id="_GUB2KXCxEeyAj6tns2Eq3A"/>
                         <styles xmi:type="notation:FilteringStyle" xmi:id="_GUB2KnCxEeyAj6tns2Eq3A"/>
                       </children>
@@ -1235,6 +1239,14 @@
               </ownedStyle>
               <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Operation']"/>
             </ownedElements>
+            <ownedElements xmi:type="diagram:DNodeListElement" uid="_Ia0F0XCYEeyP_cySz-1F-w" name="tournerCarte()">
+              <target xmi:type="uml:Operation" href="model.uml#_IaadMHCYEeyP_cySz-1F-w"/>
+              <semanticElements xmi:type="uml:Operation" href="model.uml#_IaadMHCYEeyP_cySz-1F-w"/>
+              <ownedStyle xmi:type="diagram:Square" uid="_Ia0F0nCYEeyP_cySz-1F-w" labelAlignment="LEFT">
+                <description xmi:type="style:SquareDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Operation']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Operation']"/>
+            </ownedElements>
           </ownedDiagramElements>
           <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_5XCggG1pEey1soTeitKruw" name="CarteMemory" tooltipText="NewModel::Memory::ElementJeu::Cartes::CarteMemory" outgoingEdges="_M34p_G1qEey1soTeitKruw" width="12" height="10">
             <target xmi:type="uml:Class" href="model.uml#_4TQvUG1pEey1soTeitKruw"/>
@@ -1556,7 +1568,7 @@
               <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']"/>
-            <ownedElements xmi:type="diagram:DNodeListElement" uid="_7qcckHCVEeyP_cySz-1F-w" name="DecorateurAmulette(carte : ICarte)">
+            <ownedElements xmi:type="diagram:DNodeListElement" uid="_7qcckHCVEeyP_cySz-1F-w" name="EffetAmulette(carte : ICarte)">
               <target xmi:type="uml:Operation" href="model.uml#_49NaQHCVEeyP_cySz-1F-w"/>
               <semanticElements xmi:type="uml:Operation" href="model.uml#_49NaQHCVEeyP_cySz-1F-w"/>
               <semanticElements xmi:type="uml:Parameter" href="model.uml#_8u_p0HCVEeyP_cySz-1F-w"/>
@@ -1748,7 +1760,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@edgeMappings[name='CD_InterfaceRealization']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_H0l1sG1yEey1soTeitKruw" name="abstractCartesToIEtatCartes" sourceNode="_2OT1AG1pEey1soTeitKruw" targetNode="_KWBtAG1xEey1soTeitKruw" beginLabel="abstractCartes[*]" endLabel="IEtatCartes[4]">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_H0l1sG1yEey1soTeitKruw" name="abstractCartesToIEtatCartes" sourceNode="_2OT1AG1pEey1soTeitKruw" targetNode="_KWBtAG1xEey1soTeitKruw" beginLabel="abstractCartes[*]" endLabel="iEtatCartes[*]">
       <target xmi:type="uml:Association" href="model.uml#_H0iLMG1yEey1soTeitKruw"/>
       <semanticElements xmi:type="uml:Association" href="model.uml#_H0iLMG1yEey1soTeitKruw"/>
       <semanticElements xmi:type="uml:Property" href="model.uml#_H0iLNG1yEey1soTeitKruw"/>

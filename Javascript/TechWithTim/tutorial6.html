@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1 id="header">Hello</h1>
+        <input type="text" id="inp"/>
+        <button onclick="red()">Red</button>
+        <button onclick="green()">Green</button>
+
+        <script type="text/javascript">
+            function red() {
+                document.getElementById("header").innerHTML = "Red" ;
+                document.getElementById("header").style.color = "red" ;
+                console.log("red") ;
+            }
+
+            function green() {
+                document.getElementById("header").innerHTML = "Green" ;
+                document.getElementById("header").style.color = "green" ;
+                console.log("green") ;
+            }
+        </script>
+    </body>
+</html>

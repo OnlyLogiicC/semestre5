@@ -18,4 +18,8 @@ public abstract class AbstractBonus implements ICarte {
 		this.carte = decorateur;
 	}
 
+	public void tournerCarte() {
+		//action classique
+	}
+
 }

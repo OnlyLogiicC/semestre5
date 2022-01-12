@@ -9,6 +9,8 @@ public class CarteMemory extends AbstractCarte{
 
 	@Override
 	public void tournerCarte() {
+
+		//TODO : action classique de retourner la carte
 		
 	}
 }

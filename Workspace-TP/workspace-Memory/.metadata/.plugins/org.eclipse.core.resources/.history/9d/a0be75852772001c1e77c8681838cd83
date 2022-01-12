@@ -21,11 +21,6 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WXaC8G1rEey1soTeitKruw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WXaC8W1rEey1soTeitKruw" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_Vdi4AHInEey0KLzPsWSLLw" name="nbCartesMyst" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VdjfEHInEey0KLzPsWSLLw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VdjfEXInEey0KLzPsWSLLw" value="1"/>
-        </ownedAttribute>
         <ownedOperation xmi:id="_Qzo4YG1rEey1soTeitKruw" name="initPlateau">
           <ownedParameter xmi:id="_p2yh4G1tEey1soTeitKruw" name="Taille">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -37,7 +32,6 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_OamZsHInEey0KLzPsWSLLw" name="generateListCartes" visibility="private"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_TiFREG1qEey1soTeitKruw" memberEnd="_TiF4IG1qEey1soTeitKruw _TiF4I21qEey1soTeitKruw" navigableOwnedEnd="_TiF4I21qEey1soTeitKruw">
         <ownedEnd xmi:id="_TiF4IG1qEey1soTeitKruw" name="plateau" type="_xzdaUG1pEey1soTeitKruw" association="_TiFREG1qEey1soTeitKruw">
@@ -53,6 +47,27 @@
         <ownedLiteral xmi:id="_7-cVsG1rEey1soTeitKruw" name="2">
           <specification xmi:type="uml:LiteralInteger" xmi:id="_7-c8wG1rEey1soTeitKruw"/>
         </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_mLL38HCQEeyP_cySz-1F-w" name="NbCartesMyst" visibility="public">
+        <ownedLiteral xmi:id="_rpodoHCQEeyP_cySz-1F-w" name="2">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_rppEsHCQEeyP_cySz-1F-w"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_tlZmwHCQEeyP_cySz-1F-w" name="4">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_tlaN0HCQEeyP_cySz-1F-w" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ukByMHCQEeyP_cySz-1F-w" name="6">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_ukByMXCQEeyP_cySz-1F-w" value="2"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_HLeCAHCREeyP_cySz-1F-w" memberEnd="_HLepEHCREeyP_cySz-1F-w _HLepE3CREeyP_cySz-1F-w" navigableOwnedEnd="_HLepE3CREeyP_cySz-1F-w">
+        <ownedEnd xmi:id="_HLepEHCREeyP_cySz-1F-w" name="plateaus" type="_xzdaUG1pEey1soTeitKruw" association="_HLeCAHCREeyP_cySz-1F-w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HLepEXCREeyP_cySz-1F-w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HLepEnCREeyP_cySz-1F-w" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_HLepE3CREeyP_cySz-1F-w" name="nbCartesMyst" visibility="private" type="_mLL38HCQEeyP_cySz-1F-w" association="_HLeCAHCREeyP_cySz-1F-w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HLepFHCREeyP_cySz-1F-w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HLepFXCREeyP_cySz-1F-w" value="1"/>
+        </ownedEnd>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_tk2E0G1pEey1soTeitKruw" name="Joueur">
@@ -126,6 +141,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4RG9xm1qEey1soTeitKruw" value="8"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RyZxQG1sEey1soTeitKruw" name="Comportement"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_SNXeoHCQEeyP_cySz-1F-w" name="Partie">
       <packagedElement xmi:type="uml:Class" xmi:id="_vlhjIG1pEey1soTeitKruw" name="Partie" visibility="public">
         <ownedAttribute xmi:id="_CboRAG1rEey1soTeitKruw" name="id" visibility="private">
@@ -156,7 +172,6 @@
         <ownedOperation xmi:id="_d6D0sG1uEey1soTeitKruw" name="ajoutJoueur" visibility="private">
           <ownedParameter xmi:id="_mVUJwG1uEey1soTeitKruw" name="joueur" type="_CkUIYG1qEey1soTeitKruw"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_q84j4HImEey0KLzPsWSLLw" name="testfinPartie" visibility="private"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_hI7WsG1pEey1soTeitKruw" name="ElementJeu">
@@ -178,6 +193,7 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_2zzuwG1pEey1soTeitKruw" name="AbstractCarteMystere" visibility="public" isAbstract="true">
           <generalization xmi:id="_MgAVcG1qEey1soTeitKruw" general="_1gfswG1pEey1soTeitKruw"/>
           <ownedOperation xmi:id="_U9qsAG1vEey1soTeitKruw" name="effetMystère"/>
+          <ownedOperation xmi:id="_IaadMHCYEeyP_cySz-1F-w" name="tournerCarte"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_4TQvUG1pEey1soTeitKruw" name="CarteMemory" visibility="public">
           <generalization xmi:id="_M320wG1qEey1soTeitKruw" general="_1gfswG1pEey1soTeitKruw"/>
@@ -203,9 +219,9 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H0iLMm1yEey1soTeitKruw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H0iLM21yEey1soTeitKruw" value="*"/>
           </ownedEnd>
-          <ownedEnd xmi:id="_H0iLNG1yEey1soTeitKruw" name="IEtatCartes" type="_I126wG1xEey1soTeitKruw" aggregation="shared" association="_H0iLMG1yEey1soTeitKruw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H0iLNW1yEey1soTeitKruw" value="4"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H0iLNm1yEey1soTeitKruw" value="4"/>
+          <ownedEnd xmi:id="_H0iLNG1yEey1soTeitKruw" name="iEtatCartes" type="_I126wG1xEey1soTeitKruw" aggregation="shared" association="_H0iLMG1yEey1soTeitKruw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H0iLNW1yEey1soTeitKruw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H0iLNm1yEey1soTeitKruw" value="*"/>
           </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_2TGC0G1zEey1soTeitKruw" name="AutomateCarte">
@@ -246,18 +262,15 @@
             <ownedOperation xmi:id="_ETZxUG1zEey1soTeitKruw" name="Retirer"/>
           </packagedElement>
         </packagedElement>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_fzsoIG10Eey1soTeitKruw" name="ICarte" visibility="public">
-          <ownedOperation xmi:id="_ecabAHIoEey0KLzPsWSLLw" name="tournerCarte"/>
-        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fzsoIG10Eey1soTeitKruw" name="ICarte" visibility="public"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_kQGjAG1pEey1soTeitKruw" name="Bonus">
         <packagedElement xmi:type="uml:Class" xmi:id="_Ay1jsG1qEey1soTeitKruw" name="Amulette" visibility="public">
           <generalization xmi:id="_yup2QG10Eey1soTeitKruw"/>
           <generalization xmi:id="_7MqkYG10Eey1soTeitKruw" general="_5vCIwG10Eey1soTeitKruw"/>
-          <ownedOperation xmi:id="_49NaQHCVEeyP_cySz-1F-w" name="DecorateurAmulette">
+          <ownedOperation xmi:id="_49NaQHCVEeyP_cySz-1F-w" name="EffetAmulette">
             <ownedParameter xmi:id="_8u_p0HCVEeyP_cySz-1F-w" name="carte" type="_fzsoIG10Eey1soTeitKruw"/>
           </ownedOperation>
-          <ownedOperation xmi:id="_kPGyYHIoEey0KLzPsWSLLw" name="tournerCarte"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_5vCIwG10Eey1soTeitKruw" name="AbstractBonus" visibility="public">
           <generalization xmi:id="_4xEPMG11Eey1soTeitKruw" general="_yy_ksG1pEey1soTeitKruw"/>
@@ -266,7 +279,6 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DE99YG11Eey1soTeitKruw" value="1"/>
           </ownedAttribute>
           <interfaceRealization xmi:id="_9ewi0G10Eey1soTeitKruw" client="_5vCIwG10Eey1soTeitKruw" supplier="_fzsoIG10Eey1soTeitKruw" contract="_fzsoIG10Eey1soTeitKruw"/>
-          <ownedOperation xmi:id="_kBa7sHIoEey0KLzPsWSLLw" name="tournerCarte"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_yy_ksG1pEey1soTeitKruw" name="ElementJeu" visibility="public" isAbstract="true">

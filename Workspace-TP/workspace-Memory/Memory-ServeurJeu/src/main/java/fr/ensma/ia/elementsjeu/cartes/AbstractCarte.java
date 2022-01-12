@@ -50,27 +50,16 @@ public abstract class AbstractCarte extends ElementJeu implements ICarte {
 		return cachee;
 	}
 
-	@SuppressWarnings("unused")
-	private void setCachee(IEtatCarte cachee) {
-		this.cachee = cachee;
-	}
-
 	public IEtatCarte getVisible() {
 		return visible;
-	}
-
-	@SuppressWarnings("unused")
-	private void setVisible(IEtatCarte visible) {
-		this.visible = visible;
 	}
 
 	public IEtatCarte getGagnee() {
 		return gagnee;
 	}
 
-	@SuppressWarnings("unused")
-	private void setGagnee(IEtatCarte gagnee) {
-		this.gagnee = gagnee;
+	public void tournerCarte() {
+		//TODO action classique de retourner une carte (utiliser le pattern State)
 	}
 	
 

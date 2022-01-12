@@ -7,6 +7,7 @@ public abstract class AbstractCarteMystere extends AbstractCarte {
 		// TODO Auto-generated constructor stub
 	}
 	
+
 	public void effetMystere() {
 		
 	}

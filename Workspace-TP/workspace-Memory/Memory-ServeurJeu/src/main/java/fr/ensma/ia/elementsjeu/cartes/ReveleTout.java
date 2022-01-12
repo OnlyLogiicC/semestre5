@@ -9,7 +9,7 @@ public class ReveleTout extends AbstractCarteMystere {
 
 	@Override
 	public void tournerCarte() {
-		// TODO Auto-generated method stub
+		// TODO effet classique + appel de effetMystere()
 		
 	}
 	

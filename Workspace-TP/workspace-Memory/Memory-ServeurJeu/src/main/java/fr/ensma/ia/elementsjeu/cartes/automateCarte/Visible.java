@@ -12,15 +12,15 @@ public class Visible extends AbstractEtatCarte {
 	}
 	
 	public void Retourner() {
-		
+		//TODO : transition vers Cachee
 	}
 	
 	public void Retirer() {
-		
+		//TODO : transition vers Gagnee
 	}
 	
 	public void Replacer() {
-		
+		//TODO : transition impossible
 	}
 
 	public AbstractCarte getCarte() {

@@ -11,7 +11,7 @@ public class Amulette extends AbstractBonus {
 
 	@Override
 	public void tournerCarte() {
-		// TODO Auto-generated method stub
+		// action classique + action amulette
 		
 	}
 	

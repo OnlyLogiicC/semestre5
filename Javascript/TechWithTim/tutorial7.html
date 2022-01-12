@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1 id="header">Hello</h1>
+        <input type="text" id="inp"/>
+        <button onclick="pressed()">Click</button>
+        
+        <script type="text/javascript">
+            function pressed() {
+                console.log("clicked") ;
+                var text = document.getElementById("inp").value ;
+                if (text === "red") {
+                    document.getElementById("header").style.color = "red" ;
+                } 
+                else if (text === "green") {
+                    document.getElementById("header").style.color = "green" ;
+                } 
+                else {
+                    document.getElementById("header").style.color = "black" ;
+                }
+            }
+            
+        </script>
+    </body>
+</html>
