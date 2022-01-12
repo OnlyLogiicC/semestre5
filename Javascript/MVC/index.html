@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <script src="utils.js"></script>
+  <script src="view.js"></script>
+  <script src="controler.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "./style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <div id="main"></div>
+</body>
+</html>
+
+<script>
+  
+var modelInteger = new ModelInteger();
+var modelInteger2 = new ModelInteger();
+
+var modelCheckbox = new ModeleCheckbox();
+var modelCheckbox2 = new ModeleCheckbox();
+
+
+var controler = new ControlerInteger(modelInteger, modelCheckbox);
+var controler2 = new ControlerInteger(modelInteger2, modelCheckbox2);
+
+var sommeObserver = new SommeObserver(modelInteger, modelInteger2);
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+</script>
+

@@ -1,0 +1,52 @@
+package fr.ensma.a3.ia.v1;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.util.concurrent.TimeoutException;
+
+import com.google.gson.Gson;
+
+import fr.ensma.a3.ia.rabbitmq.Listener;
+import fr.ensma.a3.ia.rabbitmq.Producer;
+import fr.ensma.a3.ia.thread.thread1_v1_receive;
+import fr.ensma.a3.ia.thread.thread2_v1;
+import fr.ensma.a3.ia.types.Trame;
+
+
+public class Brain_Consumer_Producer {
+	
+	
+	
+	
+	public static void main( String[] args ) throws KeyManagementException, NoSuchAlgorithmException,IOException, URISyntaxException, InterruptedException, TimeoutException {
+		String IP_RabbitMQ = "192.168.196.132" ; // IP de la machine du RabbitMQ
+		String QUEUE_CAPT_NAME = "Queue_Rasp_Capteur"; 
+		Listener MQ_Listener = new Listener(IP_RabbitMQ, QUEUE_CAPT_NAME);
+		String LastTrame = null;
+		
+		// Fin declaration et instanciation consumer
+		
+		String QUEUE_BRAIN_NAME = "Queue_Rasp_Actionneur";
+		Float valConvertie = 0F;
+		Gson gson = new Gson();
+		Producer MQ_Producer = new Producer(IP_RabbitMQ, QUEUE_BRAIN_NAME);
+		Trame trameA = new Trame(null, null, null);
+		
+		//fin declaration et instanciation producer
+		
+		
+		thread1_v1_receive run1 = new thread1_v1_receive(MQ_Listener);
+		thread2_v1 run2 = new thread2_v1(MQ_Listener, MQ_Producer, LastTrame, gson, valConvertie, trameA);
+		
+		Thread th1 = new Thread(run1);
+		Thread th2 = new Thread(run2);
+		th1.start();
+		th2.start();
+		
+
+				
+		}
+	}
+

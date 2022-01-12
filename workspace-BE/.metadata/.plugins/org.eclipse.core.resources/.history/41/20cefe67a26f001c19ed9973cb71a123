@@ -1,0 +1,46 @@
+package fr.ensma.a3.ia.v1;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.util.concurrent.TimeoutException;
+
+import com.google.gson.Gson;
+
+import fr.ensma.a3.ia.actionneurs.Pompe;
+import fr.ensma.a3.ia.rabbitmq.Listener;
+import fr.ensma.a3.ia.thread.thread1_v1_receive;
+import fr.ensma.a3.ia.thread.thread3_v1_treatment;
+
+public class Consumer_Rasp_Actionneur {
+
+	
+	
+	
+	public static void main( String[] args ) throws KeyManagementException, NoSuchAlgorithmException, IOException, URISyntaxException, InterruptedException, TimeoutException {
+		
+		String IP_RabbitMQ = "192.168.196.132" ; // IP de la machine du RabbitMQ
+		String QUEUE_BRAIN_NAME = "Queue_Rasp_Actionneur";
+		Listener MQ_Listener = new Listener(IP_RabbitMQ, QUEUE_BRAIN_NAME);
+		String LastTrame = null;
+		Gson gson = new Gson();
+		// Fin declaration et instanciation consumer
+		
+		Pompe moteur_acide = new Pompe("Pompe_sol_acide", false, 1);
+		Pompe moteur_basique = new Pompe("Pompe_sol_basique", false, 2);
+		
+		// fin instanciation des actionneurs
+		
+		thread1_v1_receive run1 = new thread1_v1_receive(MQ_Listener);
+		thread3_v1_treatment run3 = new thread3_v1_treatment(MQ_Listener, LastTrame, moteur_acide, moteur_basique, gson);
+		Thread th1 = new Thread(run1);
+		Thread th2 = new Thread(run3);
+		
+		th1.start();
+		th2.start();
+		
+		
+		}
+	
+}

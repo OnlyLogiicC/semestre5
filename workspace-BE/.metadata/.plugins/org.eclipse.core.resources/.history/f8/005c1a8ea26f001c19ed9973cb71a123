@@ -1,0 +1,98 @@
+package fr.ensma.a3.ia.rabbitmq;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeoutException;
+
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+public class Listener  {
+	
+	private String QUEUE_NAME ;  // la queue à écouter
+	private String MQ_IP ;  // IP du RabbitMQ
+	private String myM = null;
+	private boolean fresh = false;
+	private List<String> TrameList = new ArrayList<>();
+	private static int max = 10;
+	
+	
+	public Listener(String ip, String queue_name) {
+		this.QUEUE_NAME = queue_name ;
+		this.MQ_IP = ip ;
+	}
+		
+		
+	public void receive() throws IOException, KeyManagementException, NoSuchAlgorithmException, URISyntaxException, InterruptedException, TimeoutException {
+		ConnectionFactory factory = new ConnectionFactory();
+//		factory.setHost(rabbitMQHosts);
+		factory.setUri("amqp://" + MQ_IP + ":5672");
+
+		Connection connection = factory.newConnection();
+		Channel channel = connection.createChannel();
+		channel.queueDeclare(QUEUE_NAME, false, false, false, null) ;
+		
+		System.out.println(" [*] Waiting for messages. To exit press CTRL+C") ;
+
+		channel.basicConsume(QUEUE_NAME, true, (consumerTag, message) -> {
+			String m = new String(message.getBody(), "UTF-8") ;
+			System.out.println("[x] Message received : " + m) ; 
+			this.setMyM(m); //stock le message dans le string myM
+			this.fresh = true; // Permet de savoir quand on recoit une nouvelle valeur 
+			TrameList.add(this.myM); // ajout de la trame stockée dans MyM dans notre list 
+			if (TrameList.size() == max) {
+				TrameList = TrameList.subList(1, max);
+			}
+		}, consumerTag -> {} ) ;
+		
+	}
+
+
+	public String getMQ_IP() {
+		return MQ_IP;
+	}
+
+	public void setMQ_IP(String mQ_IP) {
+		MQ_IP = mQ_IP;
+	}
+
+	public String getLabel() {
+		return QUEUE_NAME;
+	}
+
+	public void setLabel(String label) {
+		this.QUEUE_NAME = label;
+	}
+
+
+	public boolean getFresh() {
+		return fresh;
+	}
+
+
+	public void setFresh(boolean fresh) {
+		this.fresh = fresh;
+	}
+
+
+	public String getMyM() {
+		return myM;
+	}
+
+
+	public void setMyM(String myM) {
+		this.myM = myM;
+	}
+
+	public List<String> getTrameList() {
+		return TrameList;
+	}
+
+
+
+
+}
