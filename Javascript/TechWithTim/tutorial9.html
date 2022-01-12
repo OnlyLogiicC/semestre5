@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1 id="header">Type Something</h1>
+        <input type="text" id="inp"/>
+        <button onclick="pressed()">Click</button>
+        <p id="output"></p>
+
+        <script>
+
+            function pressed() {
+                var text = document.getElementById("inp").value ;
+                output.innerHTML = text.trim().endsWith("@") ;
+                console.log(text.length) ;
+            }
+        
+        </script>
+    </body>
+</html>
