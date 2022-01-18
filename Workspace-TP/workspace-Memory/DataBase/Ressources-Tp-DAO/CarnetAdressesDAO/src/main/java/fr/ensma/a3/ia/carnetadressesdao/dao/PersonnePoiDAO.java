@@ -6,52 +6,50 @@ import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import fr.ensma.a3.ia.carnetadressesdao.dao.entity.AdresseEntity;
 import fr.ensma.a3.ia.carnetadressesdao.dao.entity.PersonneEntity;
 
 public class PersonnePoiDAO extends AbstractPoiDAO<PersonneEntity> {
-	
-	private static Logger LOGGER = Logger.getLogger(PersonnePoiDAO.class.getName()) ;
 
+	private static Logger LOGGER = Logger.getLogger(PersonnePoiDAO.class.getName());
+	
 	@Override
 	public Optional<PersonneEntity> getById(int id) {
-		XSSFWorkbook bdd = openBase() ;
-		Sheet tablepers = bdd.getSheet("Personnes") ;
-		Iterator<Row> iterator = tablepers.iterator() ;
-		iterator.next() ;
-		boolean trouve = false ;
-		PersonneEntity pers = null ;
+		XSSFWorkbook bdd = openBase();
+		Sheet tableadr = bdd.getSheet("Personnes");
+		Iterator<Row> iterator = tableadr.iterator();
+		iterator.next();
+		boolean trouve = false;
+		PersonneEntity prs = null;
 		while (iterator.hasNext() && !trouve) {
 			Row ligne = iterator.next();
-			pers = new PersonneEntity() ;
+			prs = new PersonneEntity();
 			if (id == (int)ligne.getCell(0).getNumericCellValue()) {
-				pers.setIdPers((int)ligne.getCell(0).getNumericCellValue());
-				pers.setNomPers(ligne.getCell(1).getStringCellValue());
-				pers.setPrenomPers(ligne.getCell(2).getStringCellValue());
-				pers.setAdressePers_FK((int)ligne.getCell(3).getNumericCellValue());
-				trouve = true ;
+				prs.setIdPers((int)ligne.getCell(0).getNumericCellValue());
+				prs.setNom(ligne.getCell(1).getStringCellValue());
+				prs.setPrenom(ligne.getCell(2).getStringCellValue());
+				prs.setAdressePers_FK((int)ligne.getCell(3).getNumericCellValue());
+				trouve = true;
 			}
 		}
 		if (trouve) {
-			closeBase(bdd) ;
-			return Optional.of(pers) ;
+			closeBase(bdd);
+			return Optional.of(prs);
 		}
 		closeBase(bdd);
-		return Optional.empty() ;
+		return Optional.empty();
 	}
 
 	@Override
 	public Optional<PersonneEntity> getByValue(PersonneEntity elem) {
 		List<PersonneEntity> listtemp = getAll();
-		for (PersonneEntity pers : listtemp) {
-			if (pers.equals(elem)) {
-				return Optional.of(pers);
+		for (PersonneEntity ad : listtemp) {
+			if (ad.equals(elem)) {
+				return Optional.of(ad);
 			}
 		}
 		return Optional.empty();
@@ -60,40 +58,40 @@ public class PersonnePoiDAO extends AbstractPoiDAO<PersonneEntity> {
 	@Override
 	public List<PersonneEntity> getAll() {
 		XSSFWorkbook bdd = openBase();
-		Sheet tablepers = bdd.getSheet("Personnes");
-		ArrayList<PersonneEntity> listepers = new ArrayList<PersonneEntity>();
-		Iterator<Row> iterator = tablepers.iterator();
+		Sheet tableadr = bdd.getSheet("Personnes");
+		ArrayList<PersonneEntity> listeadr = new ArrayList<PersonneEntity>();
+		Iterator<Row> iterator = tableadr.iterator();
 		iterator.next();
 		while (iterator.hasNext()) {
 			Row ligne = iterator.next();
-			PersonneEntity pers = new PersonneEntity();
+			PersonneEntity prs = new PersonneEntity();
 			Iterator<Cell> cellIterator = ligne.iterator();
 			Cell cellule = cellIterator.next();
-			pers.setIdPers((int)cellule.getNumericCellValue());
-			pers.setNomPers(ligne.getCell(1).getStringCellValue());
-			pers.setPrenomPers(ligne.getCell(2).getStringCellValue());
-			pers.setAdressePers_FK((int)ligne.getCell(3).getNumericCellValue());
-			listepers.add(pers);
+			prs.setIdPers((int)cellule.getNumericCellValue());
+			prs.setNom(ligne.getCell(1).getStringCellValue());
+			prs.setPrenom(ligne.getCell(2).getStringCellValue());
+			prs.setAdressePers_FK((int)ligne.getCell(3).getNumericCellValue());
+			listeadr.add(prs);
 		}
 		closeBase(bdd);
-		return listepers;
+		return listeadr;
 	}
 
 	@Override
 	public void create(PersonneEntity elem) {
 		if (getByValue(elem).isEmpty()) {
 			XSSFWorkbook bdd = openBase();
-			Sheet tablepers = bdd.getSheet("Personnes");
-			int lrow = tablepers.getLastRowNum();
-			int lid = (int) tablepers.getRow(lrow).getCell(0).getNumericCellValue();
+			Sheet tableprs = bdd.getSheet("Personnes");
+			int lrow = tableprs.getLastRowNum();
+			int lid = (int) tableprs.getRow(lrow).getCell(0).getNumericCellValue();
 			elem.setIdPers(lid + 1);
-			Row ligne = tablepers.createRow(lrow + 1);
+			Row ligne = tableprs.createRow(lrow + 1);
 			Cell cell = ligne.createCell(0);
 			cell.setCellValue(elem.getIdPers());
 			cell = ligne.createCell(1);
-			cell.setCellValue(elem.getNomPers());
+			cell.setCellValue(elem.getNom());
 			cell = ligne.createCell(2);
-			cell.setCellValue(elem.getPrenomPers());
+			cell.setCellValue(elem.getPrenom());
 			cell = ligne.createCell(3);
 			cell.setCellValue(elem.getAdressePers_FK());
 			writeBase(bdd);
@@ -102,22 +100,22 @@ public class PersonnePoiDAO extends AbstractPoiDAO<PersonneEntity> {
 			//TODO : Prévoir une exception ...
 			LOGGER.log(Level.INFO,"Element Deja dans la base ...");
 		}
-
+		
 	}
 
 	@Override
 	public void update(PersonneEntity elem) {
 		XSSFWorkbook bdd = openBase();
-		Sheet tablepers = bdd.getSheet("Personnes");
-		Iterator<Row> iterator = tablepers.iterator();
+		Sheet tableprs = bdd.getSheet("Personnes");
+		Iterator<Row> iterator = tableprs.iterator();
 		iterator.next();
 		boolean trouve = false;
 		while (iterator.hasNext() && !trouve) {
 			Row ligne = iterator.next();
 			if (elem.getIdPers() == (int) ligne.getCell(0).getNumericCellValue()) {
 				trouve = true;
-				ligne.getCell(1).setCellValue(elem.getNomPers());
-				ligne.getCell(2).setCellValue(elem.getPrenomPers());
+				ligne.getCell(1).setCellValue(elem.getNom());
+				ligne.getCell(2).setCellValue(elem.getPrenom());
 				ligne.getCell(3).setCellValue(elem.getAdressePers_FK());
 				writeBase(bdd);
 			}
@@ -127,21 +125,21 @@ public class PersonnePoiDAO extends AbstractPoiDAO<PersonneEntity> {
 			LOGGER.log(Level.INFO,"Element absent de la base ...");
 		}
 		closeBase(bdd);
-
+		
 	}
 
 	@Override
 	public void delete(PersonneEntity elem) {
 		XSSFWorkbook bdd = openBase();
-		Sheet tablepers = bdd.getSheet("Personnes");
-		Iterator<Row> iterator = tablepers.iterator();
+		Sheet tableprs = bdd.getSheet("Personnes");
+		Iterator<Row> iterator = tableprs.iterator();
 		iterator.next();
 		boolean trouve = false;
 		while (iterator.hasNext() && !trouve) {
 			Row ligne = iterator.next();
 			if (elem.getIdPers() == (int) ligne.getCell(0).getNumericCellValue()) {
 				trouve = true;
-				removeRow(tablepers, ligne.getRowNum());
+				removeRow(tableprs, ligne.getRowNum());
 				writeBase(bdd);
 			}
 		}
@@ -150,8 +148,9 @@ public class PersonnePoiDAO extends AbstractPoiDAO<PersonneEntity> {
 			LOGGER.log(Level.INFO,"Element absent de la base ...");
 		}
 		closeBase(bdd);
-
+		
 	}
+	
 
-
+	
 }

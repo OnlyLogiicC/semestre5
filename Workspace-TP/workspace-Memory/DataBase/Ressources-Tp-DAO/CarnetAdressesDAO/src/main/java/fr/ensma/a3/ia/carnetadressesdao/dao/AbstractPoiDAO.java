@@ -10,7 +10,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
- * DAO : Data Access Object
  * DAO abstrait : propose les opérations d'ouverture et de lecture/écriture dans la base.
  * @author michaelrichard
  *
