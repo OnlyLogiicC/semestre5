@@ -1,0 +1,9 @@
+kumuluzee:
+   name: mikky-test
+   version: 1.0.0
+   jwt-auth:
+      enabled: true
+   server:
+      base-url: http://localhost:8080
+      http:
+         port: 8080

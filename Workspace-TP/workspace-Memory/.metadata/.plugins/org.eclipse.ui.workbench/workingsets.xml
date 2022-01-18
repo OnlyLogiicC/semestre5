@@ -2,5 +2,12 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1641740132507_0" label="Java Main Sources" name="Java Main Sources"/>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1641740132512_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1642509557160_3" label="MyMultiChat" name="MyMultiChat"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1642517274488_4" label="MyMultiChat-Game" name="MyMultiChat-Game">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MyMultiChat-Game" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MyMultiChat-Game-Client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MyMultiChat-Game-API" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MyMultiChat-Game-Server" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1641740132777_2" label="Window Working Set" name="Aggregate for window 1641740132777"/>
 </workingSetManager>

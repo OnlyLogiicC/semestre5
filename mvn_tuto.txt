@@ -1,2 +1,5 @@
 mvn archetype:generate -DgroupId=fr.ensma.ia -DartifactId=<nomprojet>
 
+simple
+simple maven archetype : 56
+
