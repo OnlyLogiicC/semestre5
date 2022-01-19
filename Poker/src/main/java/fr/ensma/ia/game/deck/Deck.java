@@ -7,6 +7,7 @@ import java.util.List;
 
 import fr.ensma.ia.game.carte.Carte;
 import fr.ensma.ia.game.carte.Couleur;
+import fr.ensma.ia.game.carte.Hauteur;
 
 public class Deck {
 	
@@ -27,6 +28,14 @@ public class Deck {
 	
 	public void addcarte(Carte c) {
 		this.cartes.add(c) ;
+	}
+	
+	public void removecarte(Carte c) {
+		this.cartes.remove(c) ;
+	}
+	
+	public void clearDeck() {
+		this.cartes = new ArrayList<Carte>() ;
 	}
 	
 	public void triCouleur() {
@@ -70,12 +79,22 @@ public class Deck {
 		this.cartes = carteout ;
 	}
 	
-	public void triAlea() {
+	public void melanger() {
 		Collections.shuffle(this.cartes) ;
 	}
 	
 	public void pioche(Deck main) {
-		main.addcarte(this.cartes.remove(cartes.size()));
+		main.addcarte(this.cartes.remove(cartes.size() - 1));
+	}
+	
+	public void initDeck() {
+		this.clearDeck(); ;
+		for (Couleur color : Couleur.values()) {
+			for (Hauteur h : Hauteur.values()) {
+				this.addcarte(new Carte(color, h));
+			}
+		}
+		this.melanger();
 	}
 	
 	

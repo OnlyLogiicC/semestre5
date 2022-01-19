@@ -37,7 +37,7 @@ public class App
         
         D.triHauteur();
         System.out.println(D.toString());
-        D.triAlea();
+        D.melanger();
         System.out.println(D.toString());
 
     }
