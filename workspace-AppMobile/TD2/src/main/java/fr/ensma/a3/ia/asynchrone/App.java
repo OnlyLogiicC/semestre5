@@ -1,4 +1,4 @@
-package fr.ensma.a3.ia;
+package fr.ensma.a3.ia.asynchrone;
 
 /**
  * Hello world!
