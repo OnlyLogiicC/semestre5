@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Navigation">
+        <attr name="menuString" format="string" />
+        <attr name="activation" format="boolean" />
+    </declare-styleable>
+</resources>
