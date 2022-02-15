@@ -1,0 +1,88 @@
+!SESSION 2022-02-15 10:33:22.856 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.41 - pxa6480sr5fp41-20190919_01(SR5 FP41)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20190911_427071 (JIT enabled, AOT enabled)
+OpenJ9   - d581d49
+OMR      - ca4db84
+IBM      - 5cfdf9c
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Command-line arguments:  -clean -nl fr_FR -configuration /home/perezm/Documents/semestre5/workspace-DI_Optimisation/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2022-02-15 10:33:22.863
+!MESSAGE Run Exercice2 in /home/perezm/Documents/semestre5/workspace-DI_Optimisation/TD2
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2022-02-15 10:33:23.102
+!MESSAGE load failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: load failed
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:146)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: ilog.concert.IloException: La configuration d'exécution "Exercice2" n'est pas valide.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:226)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:116)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	... 3 more
+!SUBENTRY 1 ilog.odms.ide.opllang.remote 4 0 2022-02-15 10:33:23.103
+!MESSAGE load failed
+!STACK 0
+ilog.concert.IloException: La configuration d'exécution "Exercice2" n'est pas valide.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:226)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:116)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2022-02-15 10:33:45.808 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.41 - pxa6480sr5fp41-20190919_01(SR5 FP41)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20190911_427071 (JIT enabled, AOT enabled)
+OpenJ9   - d581d49
+OMR      - ca4db84
+IBM      - 5cfdf9c
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Command-line arguments:  -clean -nl fr_FR -configuration /home/perezm/Documents/semestre5/workspace-DI_Optimisation/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2022-02-15 10:33:45.815
+!MESSAGE Run Exercice2 in /home/perezm/Documents/semestre5/workspace-DI_Optimisation/TD2
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2022-02-15 10:33:45.857
+!MESSAGE load failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: load failed
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:146)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: ilog.concert.IloException: La configuration d'exécution "Exercice2" n'est pas valide.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:226)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:116)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	... 3 more
+!SUBENTRY 1 ilog.odms.ide.opllang.remote 4 0 2022-02-15 10:33:45.860
+!MESSAGE load failed
+!STACK 0
+ilog.concert.IloException: La configuration d'exécution "Exercice2" n'est pas valide.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:226)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:116)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2022-02-15 10:36:11.012 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.41 - pxa6480sr5fp41-20190919_01(SR5 FP41)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20190911_427071 (JIT enabled, AOT enabled)
+OpenJ9   - d581d49
+OMR      - ca4db84
+IBM      - 5cfdf9c
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Command-line arguments:  -clean -nl fr_FR -configuration /home/perezm/Documents/semestre5/workspace-DI_Optimisation/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2022-02-15 10:36:11.019
+!MESSAGE Run Exercice2 in /home/perezm/Documents/semestre5/workspace-DI_Optimisation/TD2
