@@ -1,5 +1,7 @@
 from itertools import chain, combinations
 
+PRECISION = 3
+
 def omega_generation() :
     omega_out = []
     n = int(input("Combien d'éléments dans l'univers ? ")) #raw_input en python 2
@@ -40,7 +42,7 @@ def intersection(P,A) : # Teste si P et A ont une intersection non vide
     if P == 'vide' or A == 'vide' : # Renvoie False pour l'intersection de deux ensembles vides
         return False
     for char_p in P :
-        for char_a in A
+        for char_a in A :
             if char_p == char_a :
                 return True
     return False
@@ -57,11 +59,24 @@ def ensemble_intersection(P,A) : # Renvoie l'intersection des ensembles P et A
         return 'vide'
     return ens_out
 
+def ensemble_union(P,A) : # Renvoie l'union des ensembles P et A
+    if equals(P,'vide') : return A
+    if equals(A,'vide') : return P
+    if equals(P,A) : return P
+    tmp = A[:]
+    for char_p in P :
+        present = False
+        i = 0
+        while not present and i<len(tmp) :
+            if char_p == tmp[i] :
+                tmp = tmp[:i] + tmp[i+1:]
+                present = True
+                i -= 1 # Compensation de la suppression du charactère par rapport à la taille de la chaîne tmp
+            i += 1
+    return P + tmp
 
 def equals(A, B) : # Teste l'égalité entre deux ensembles
-    if (include(A,B) and include(B,A)) :
-        return True
-    return False
+    return (include(A,B) and include(B,A))
 
 def complem(A,omega) : # Retourne l'ensemble complémentaire de A
     Acomp = ''
@@ -93,14 +108,14 @@ def mass_generation(powerset) :
     return mass_out
 
 def mass_gen_combi(pwrset) : # Fonction qui génère les fonctions de mass m1, m2, .., mN
-     L_mass = []
-     n = int(input("Combien de fonctions de mass à renseigner ? ")) #raw_input en python 2
-     for i in range(n) :
+    L_mass = []
+    n = int(input("Combien de fonctions de mass à renseigner ? ")) #raw_input en python 2
+    for i in range(n) :
         print("Fonction de mass " + str(i+1) + " : ")
         L_mass.append(mass_generation(pwrset))
     return L_mass
 
-def bel_generation(powerset) :
+def bel_generation(powerset) : # Fonction qui génère la fonction de Croyance
     bel_out = {}
     for p in powerset :
         bel_out[p] = 0
@@ -120,7 +135,7 @@ def bel_generation(powerset) :
             print("Cet ensemble ne fait pas parti du powerset, l'ajout de Croyance a échoué !")
     return bel_out
 
-def pl_generation(powerset) :
+def pl_generation(powerset) : # Fonction qui génère la fonction de Croyance
     pl_out = {}
     for p in powerset :
         pl_out[p] = 0
@@ -187,7 +202,7 @@ def bel_to_pl(pwrset, D_bel, A) : #Fonction qui calcule la Plausibilité à part
         D_mass[P] = bel_to_mass(pwrset, D_bel, P)
     return pl(pwrset, D_mass,A)
 
-def degree_of_conflict(pwrset, D_mass1, D_mass2) :
+def degree_of_conflict(pwrset, D_mass1, D_mass2) : # Calcule le degré de conflit entre deux fonctions de Mass
     K = 0
     for e1 in pwrset :
         for e2 in pwrset :
@@ -195,9 +210,80 @@ def degree_of_conflict(pwrset, D_mass1, D_mass2) :
                 K += D_mass1[e1]*D_mass2[e2]
     return K
 
+def conjonctive_rule(pwrset, D_mass1, D_mass2, A) : # Calcul la valeur de la loi conjonctive pour l'ensemble A
+    result = 0
+    for e1 in pwrset :
+        for e2 in pwrset :
+            ens = ensemble_intersection(e1, e2)
+            if equals(ens,A) :
+                result += D_mass1[e1] * D_mass2[e2]
+    return round(result,PRECISION)
 
+def conjonctive_rule_dict(pwrset, D_mass1, D_mass2) : # Calcul les valeurs de la loi conjonctive pour tous les ensembles du powerset
+    result = {}
+    for e in pwrset :
+        result[e] = conjonctive_rule(pwrset,D_mass1,D_mass2,e)
+    return result
+
+def dempster_rule(pwrset, D_mass1, D_mass2, A) : # Calcul la valeur de la loi de Dempster pour l'ensemble A
+    if equals(A,'vide') : return 0
+    return round((1/(1-degree_of_conflict(pwrset,D_mass1,D_mass2)))*conjonctive_rule(pwrset,D_mass1,D_mass2,A),PRECISION)
+
+def dempster_rule_dict(pwrset, D_mass1, D_mass2) : # Calcul les valeurs de la loi de Dempster pour tous les ensembles du powerset
+    result = {}
+    for e in pwrset :
+        result[e] = dempster_rule(pwrset,D_mass1,D_mass2,e)
+    return result
+
+def disjunctive_rule(pwrset, D_mass1, D_mass2, A) : # Calcul la valeur de la loi disjonctive pour l'ensemble A
+    result = 0
+    if equals(A,'vide') : return result
+    for e1 in pwrset :
+        for e2 in pwrset :
+            ens = ensemble_union(e1, e2)
+            if equals(ens,A) :
+                result += D_mass1[e1] * D_mass2[e2]
+    return result
+
+def disjunctive_rule_dict(pwrset, D_mass1, D_mass2) : # Calcul les valeurs de la loi disjonctive pour tous les ensembles du powerset
+    result = {}
+    for e in pwrset :
+        result[e] = disjunctive_rule(pwrset,D_mass1,D_mass2,e)
+    return result
+
+def DP_rule(pwrset, D_mass1, D_mass2, A) : # Calcul la valeur de la loi de Dubois et Prade pour l'ensemble A
+    result = 0
+    if equals(A,'vide') : return result
+    for e1 in pwrset :
+        for e2 in pwrset :
+            if equals(ensemble_intersection(e1,e2),A) :
+                result += D_mass1[e1] * D_mass2[e2]
+            if (not equals(ensemble_intersection(e1,e2),'vide')) and equals(ensemble_union(e1,e2),A) :
+                result += D_mass1[e1] * D_mass2[e2]
+    return round(result,PRECISION)
+
+def DP_rule_dict(pwrset, D_mass1, D_mass2) : # Calcul les valeurs de la loi de Dubois et Prade pour tous les ensembles du powerset
+    result = {}
+    for e in pwrset :
+        result[e] = DP_rule(pwrset, D_mass1, D_mass2, e)
+    return result
+
+def RY_rule(pwrset, D_mass1, D_mass2, A) : # Calcul la valeur de la loi de Ronald Yager pour l'ensemble A
+    result = 0
+    if equals(A,'vide') : return result
+    if equals(A,pwrset[-1]) : return round(conjonctive_rule(pwrset,D_mass1,D_mass2,'vide') + D_mass1[A]*D_mass2[A],PRECISION)
+    return conjonctive_rule(pwrset,D_mass1,D_mass2,A)
+
+def RY_rule_dict(pwrset, D_mass1, D_mass2) : # Calcul les valeurs de la loi de Dubois et Prade pour tous les ensembles du powerset
+    result = {}
+    for e in pwrset :
+        result[e] = RY_rule(pwrset,D_mass1,D_mass2,e)
+    return result
 
 def representation() :
+    return 'TODO'
+
+def combinaison() :
     return 'TODO'
 
 
@@ -215,9 +301,3 @@ def start() :
         print("Plausibilité de " + A + " est de : " + str(plausible))
 
 #start()
-
-omega = omega_generation()
-print(complem('H',omega))
-print(complem('vide',omega))
-print(complem('HMP',omega))
-
