@@ -1,6 +1,6 @@
 from itertools import chain, combinations
 
-PRECISION = 3
+PRECISION = 4
 
 def omega_generation() :
     omega_out = []
@@ -160,14 +160,26 @@ def bel(pwrset, mass, A) : # Fonction de Croyance de l'ensemble A (Belief)
     for p in pwrset :
         if include(p,A):
             b += mass[p]
-    return b
+    return round(b,PRECISION)
+
+def bel_dict(pwrset, mass) :
+    result = {}
+    for e in pwrset :
+        result[e] = bel(pwrset,mass,e)
+    return result
 
 def pl(pwrset, mass, A) : # Fonction de Plausibilité de l'ensemble A (Plausibility)
     output = 0
     for p in pwrset :
         if intersection(p,A) :
             output+= mass[p]
-    return output
+    return round(output,PRECISION)
+
+def pl_dict(pwrset, mass) :
+    result = {}
+    for e in pwrset :
+        result[e] = pl(pwrset,mass,e)
+    return result
 
 def bel_to_mass(pwrset, D_bel, A) : # Fonction qui calcule la Mass à partir des Croyances connues
     if A == 'vide' :
@@ -176,7 +188,13 @@ def bel_to_mass(pwrset, D_bel, A) : # Fonction qui calcule la Mass à partir des
     for P in pwrset[1:] :
         if include(P,A) :
             m_out += (-1)**(len(A)-len(P)) * D_Bel[P]
-    return m_out
+    return round(m_out,PRECISION)
+
+def bel_to_mass_dict(pwrset, D_bel) :
+    result = {}
+    for e in pwrset :
+        result[e] = bel_to_mass(pwrset,D_bel,e)
+    return result
 
 def pl_to_mass(pwrset, D_pl, A) : # Fonction qui calcule la Mass à partir des Plausibilités connues
     if A == 'vide' :
@@ -188,7 +206,13 @@ def pl_to_mass(pwrset, D_pl, A) : # Fonction qui calcule la Mass à partir des P
             for e in pwrset :
                 if equals(Pcomp,e) : Pcomp = e
             m_out += (-1)**(len(A)-len(P) + 1) * D_pl[Pcomp]
-    return m_out
+    return round(m_out,PRECISION)
+
+def pl_to_mass_dict(pwrset, D_pl) :
+    result = {}
+    for e in pwrset :
+        result[e] = pl_to_mass(pwrset,D_pl,e)
+    return result
 
 def pl_to_bel(pwrset, D_pl, A) : #Fonction qui calcule la Croyance à partir de la Plausibilité
     D_mass = {}
@@ -196,11 +220,23 @@ def pl_to_bel(pwrset, D_pl, A) : #Fonction qui calcule la Croyance à partir de 
         D_mass[P] = pl_to_mass(pwrset, D_pl, P)
     return bel(pwrset, D_mass,A)
 
+def pl_to_bel_dict(pwrset, D_pl) :
+    result = {}
+    for e in pwrset :
+        result[e] = pl_to_bel(pwrset,D_pl,e)
+    return result
+
 def bel_to_pl(pwrset, D_bel, A) : #Fonction qui calcule la Plausibilité à partir de la Croyance
     D_mass = {}
     for P in pwrset :
         D_mass[P] = bel_to_mass(pwrset, D_bel, P)
     return pl(pwrset, D_mass,A)
+
+def bel_to_pl_dict(pwrset, D_bel) :
+    result = {}
+    for e in pwrset :
+        result[e] = bel_to_pl(pwrset,D_bel,e)
+    return result
 
 def degree_of_conflict(pwrset, D_mass1, D_mass2) : # Calcule le degré de conflit entre deux fonctions de Mass
     K = 0
@@ -280,24 +316,131 @@ def RY_rule_dict(pwrset, D_mass1, D_mass2) : # Calcul les valeurs de la loi de D
         result[e] = RY_rule(pwrset,D_mass1,D_mass2,e)
     return result
 
-def representation() :
-    return 'TODO'
+def betP(omega, pwrset, D_mass) :
+    output = {}
+    for elem in omega :
+        result = 0
+        for B in pwrset[1:] :
+            if include(elem,B) :
+                result += D_mass[B]/len(B)
+        output[elem] = round(result * (1/1 - D_mass['vide']),PRECISION)
+    return output
+
+def representation() : # Fonction qui gère le mode représentation du module
+    print("** Mode Représentation **")
+    omega = omega_generation()
+    pwrset = powerset_generation(omega)
+    print("Choisir la grandeur d'entrée connue :")
+    print("  1 - Masses\n  2 - Plausibilité (Plausibility)\n  3 - Croyance (Belief)")
+    entry = int(input("Saisir le numéro : "))
+    if entry == 1 :
+        data_in = mass_generation(pwrset)
+        print("Choisir la grandeur de sortie à calculer :")
+        print("  1 - Masses\n  2 - Plausibilité (Plausibility)\n  3 - Croyance (Belief)")
+        out = int(input("Saisir le numéro : "))
+        if out == 1 : 
+            print("Tout ça pour ça ??")
+            print(data_in)
+        elif out == 2 :
+            print("--  Masses ==> Plausibilité")
+            print(pl_dict(pwrset,data_in))
+        elif out == 3 :
+            print("--  Masses ==> Croyance")
+            print(bel_dict(pwrset,data_in))
+        else :
+            print("Sélction non reconnue, sortie du programme...")
+            return -1
+
+    elif entry == 2 :
+        data_in = pl_generation(pwrset)
+        print("Choisir la grandeur de sortie à calculer :")
+        print("  1 - Masses\n  2 - Plausibilité (Plausibility)\n  3 - Croyance (Belief)")
+        out = int(input("Saisir le numéro : "))
+        if out == 1 : 
+            print("-- Plausibilité ==> Masses")
+            print(pl_to_mass_dict(pwrset,data_in))
+        elif out == 2 :
+            print("Tout ça pour ça ??")
+            print(data_in)
+        elif out == 3 :
+            print("--  Plausibilité ==> Croyance")
+            print(pl_to_bel_dict(pwrset,data_in))
+        else :
+            print("Sélction non reconnue, sortie du programme...")
+            return -1
+    
+    elif entry == 3 :
+        data_in = bel_generation(pwrset)
+        print("Choisir la grandeur de sortie à calculer :")
+        print("  1 - Masses\n  2 - Plausibilité (Plausibility)\n  3 - Croyance (Belief)")
+        out = int(input("Saisir le numéro : "))
+        if out == 1 : 
+            print("-- Croyance ==> Masses")
+            print(bel_to_mass(pwrset,data_in))
+        elif out == 2 :
+            print("--  Croyance ==> Plausibilité")
+            print(bel_to_pl_dict(pwrset,data_in))
+        elif out == 3 :
+            print("Tout ça pour ça ??")
+            print(data_in)
+        else :
+            print("Sélction non reconnue, sortie du programme...")
+            return -1
+    else : 
+        print("Sélection non reconnue, sortie du programme...")
+        return -1
+
 
 def combinaison() :
-    return 'TODO'
+    print("** Mode Combinaison **")
+    omega = omega_generation()
+    pwrset = powerset_generation(omega)
+    L_mass = mass_gen_combi(pwrset)
+    m1 = int(input("Choisir la première fonction de masse à combiner (numéro dans 1..n de l'ordre dans lequel vous avez rentrer les fonctions) : ")) - 1
+    m2 = int(input("Choisir la seconde fonction de masse à combiner (numéro dans 1..n de l'ordre dans lequel vous avez rentrer les fonctions) : ")) - 1
+    print("Choisir l'opération de combinaison à effectuer :")
+    print("  1 - Règle de Dempster\n  2 - Règle Conjonctive\n  3 - Règle Disjonctive\n  4 - Règle de Dubois et Prade\n  5 - Règle de Yager")
+    out = int(input("Saisir le numéro : "))
+    if out == 1 : 
+        print(dempster_rule_dict(pwrset,L_mass[m1],L_mass[m2]))
+    elif out == 2 : 
+        print(conjonctive_rule_dict(pwrset,L_mass[m1],L_mass[m2]))
+    elif out == 3 : 
+        print(disjunctive_rule_dict(pwrset,L_mass[m1],L_mass[m2]))
+    elif out == 4 : 
+        print(DP_rule_dict(pwrset,L_mass[m1],L_mass[m2]))
+    elif out == 5 : 
+        print(RY_rule_dict(pwrset,L_mass[m1],L_mass[m2]))
+    else : 
+        print("Sélection non reconnue, sortie du programme...")
+        return -1
 
+def bet_mode() :
+    print("** Mode Pari (Pignistic Probability)")
+    omega = omega_generation()
+    pwrset = powerset_generation(omega)
+    D_mass = mass_generation(pwrset)
+    D_bet = betP(omega,pwrset,D_mass)
+    print(D_bet)
+    guess = omega[0]
+    for elem in omega :
+        if D_bet[elem] > D_bet[guess] :
+            guess = elem
+    print("L'événement le plus probable est : " + guess)
 
 def start() :
 
-    Omega = omega_generation()
-    pwrset = powerset_generation(Omega)
-    mass = mass_generation(pwrset)
+    print("Choisir la tâche que vous souhaitez accomplir : ")
+    print("  1 - Représentation\n  2 - Combinaison\n  3 - Pari")
+    mode = int(input("Saisir la valeur 1,2 ou 3 : "))
+    if mode == 1 : 
+        representation()
+    elif mode == 2 :
+        combinaison()
+    elif mode == 3 :
+        bet_mode()
+    else :
+        print("Sélection non reconnue, sortie du programme...")
 
-    for i in range(int(input("Combien d\'ensemble à analyser ? "))) :
-        A = input(str(i+1) + "**  Entrez le nom de l\'ensemble à analyser : ")
-        belief = bel(pwrset, mass, A)
-        plausible = pl(pwrset, mass, A)
-        print("Croyance de " + A + " est de : " + str(belief))
-        print("Plausibilité de " + A + " est de : " + str(plausible))
 
-#start()
+start()
