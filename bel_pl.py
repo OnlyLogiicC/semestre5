@@ -1,6 +1,6 @@
 from itertools import chain, combinations
 
-PRECISION = 4
+PRECISION = 4 # Nombre de chiffres après la virgule
 
 def omega_generation() : # Création de l'univers Omega en demandant à l'utilisateur de renseigner chaque événement
     omega_out = []
