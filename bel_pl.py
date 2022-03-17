@@ -1,6 +1,6 @@
 from itertools import chain, combinations
 
-PRECISION = 4 # Nombre de chiffres après la virgule
+PRECISION = 4 # Nombre de chiffre après la virgule
 
 def omega_generation() : # Création de l'univers Omega en demandant à l'utilisateur de renseigner chaque événement
     omega_out = []
@@ -389,7 +389,6 @@ def representation() : # Fonction qui gère le mode représentation du module
     else : 
         print("Sélection non reconnue, sortie du programme...")
         return -1
-
 
 def combinaison() : # Fonction qui gère le mode combinaison du module
     print("** Mode Combinaison **")
